@@ -1,0 +1,22 @@
+name: Sync to OSS
+
+on:
+  push:
+    branches:
+      - gh-pages # 这里可以根据您的需要更改分支名称
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Ossutil
+        uses: manyuanrong/setup-ossutil@v3.0 
+        with:
+          endpoint: "oss-cn-hongkong.aliyuncs.com"
+          access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+          access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
+          sts-token: ""           
+      - name: Sync files to OSS
+        run: ossutil sync -f ./ oss://meditations-top/ -u --delete
