@@ -121,7 +121,7 @@
       href="https://jsd.cdn.zzko.cn/npm/@algolia/autocomplete-theme-classic@1.11.0/dist/theme.min.css"
     />
 
-    <div class="max-w-screen-2xl mx-auto">
+    <div class="max-w-screen-2xl mx-auto my-24">
 
       <div class="max-w-screen-lg mx-auto px-4">
         <div class="relative">
@@ -129,13 +129,33 @@
           <div id="powered-by" class=""></div>
         </div>
 
-        <div id="hits" class="mt-4"></div>
+        <div id="hits" class="mt-20"></div>
 
-        <div id="pagination" class="flex mt-8 justify-center"></div>
+        <div id="pagination" class="flex mt-20 justify-center"></div>
       </div>
 
     </div>
     
+    <!-- 
+<script src="https://cdn.staticfile.org/twikoo/1.6.27/twikoo.all.min.js"></script>
+ -->
+
+<script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
+
+
+<section class="flex items-center justify-center py-12 lg:py-16 bg-base-200">
+    <div class="w-10/12 max-w-screen-lg">
+      <div  id="tcomment"></div>
+    </div>
+  
+  </section>
+  <script>
+  twikoo.init({
+    envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
+    el: '#tcomment', 
+  })
+  </script>
+
     <script src="https://jsd.cdn.zzko.cn/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
     <script src="https://jsd.cdn.zzko.cn/npm/instantsearch.js@4.64.0"></script>
     <script src="https://jsd.cdn.zzko.cn/npm/@algolia/autocomplete-js@1.15.0/dist/umd/index.production.min.js"></script>
