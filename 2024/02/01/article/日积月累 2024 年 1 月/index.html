@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="陆思沉">
+
+
+
+
+
+<title>日积月累 2024 年 1 月 | Meditations</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="https://jsd.cdn.zzko.cn/npm/theme-change@2.0.2/index.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "kjnowbcx0y");
+</script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+  <div class="daisy-drawer max-w-screen-2xl w-10/12 mx-auto">
+    <input id="my-daisy-drawer-3" type="checkbox" class="daisy-drawer-toggle" />
+    <div class="daisy-drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full daisy-navbar">
+        <div class="flex-none md:hidden">
+          <label for="my-daisy-drawer-3" aria-label="open sidebar" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </label>
+        </div>
+        <div class="flex-1 px-2 mx-2">
+          <a href="/" class="font-bold">Meditations</a>
+        </div>
+        <div class="flex-none hidden md:block">
+          <ul class="daisy-menu daisy-menu-horizontal">
+            
+            <li><a class="" href="/">首页</a></li>
+            
+            <li><a class="" href="/article">文集</a></li>
+            
+            <li><a class="" href="/gamephoto">影集</a></li>
+            
+            <li><a class="" href="/cookbook">菜品</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <label class="cursor-pointer grid place-items-center">
+            <input type="checkbox" value="synthwave" class="daisy-toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" />
+            <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="daisy-drawer-side">
+      <label for="my-daisy-drawer-3" aria-label="close sidebar" class="daisy-drawer-overlay"></label>
+      <ul class="daisy-menu p-4 w-40 min-h-full bg-base-200 items-center">
+        <!-- Sidebar content here -->
+        
+        <li><a class="" href="/">首页</a></li>
+        
+        <li><a class="" href="/article">文集</a></li>
+        
+        <li><a class="" href="/gamephoto">影集</a></li>
+        
+        <li><a class="" href="/cookbook">菜品</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</header>
+
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap prose">
+        <header class="post-header">
+            <h1 class="post-title">日积月累 2024 年 1 月</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        日期： 2024-02-01&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    分类：
+                            
+                                <a href="/categories/%E6%96%87%E9%9B%86/">文集</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>这里是对每月各事项进度所做的一个回顾，记录在阅读、生活等方面的思考和收获。这是写给自己的，在未来的某一天回顾，这些时光如同雁过留痕，能看到些许印记。</p>
+</blockquote>
+<h3 id="to-do-list-进度表"><a href="#to-do-list-进度表" class="headerlink" title="to-do-list 进度表"></a>to-do-list 进度表</h3><p>鉴于 deadline 是第一生产力，因此考虑使用进度表的方式，来直观掌握各个事项的完成情况，本质上是一种自我督促。</p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202402012105202.webp" alt="2024-1"></p>
+<h3 id="书籍阅读"><a href="#书籍阅读" class="headerlink" title="书籍阅读"></a>书籍阅读</h3><p>这个月读完了加缪的长篇小说《鼠疫》。这本书多年前就进入了待读清单，之前加缪的《局外人》曾经也给我留下了深刻印象，优秀的作家总是有着超乎寻常的洞察力。</p>
+<p>这本书我的豆瓣评语是：「《鼠疫》这本书好就好在，“鼠疫”不仅仅代表着鼠疫。」</p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202402012141300.webp" alt="鼠疫"></p>
+<p>这本书里，自然也有很多金句广为流传，随便摘抄一段感受一下。</p>
+<blockquote>
+<p>过分抬高义举，最终会间接地大力颂扬罪恶。因为，这会让人猜想，义举十分罕见，才显得如此可贵，而邪恶与冷漠则是人的行为更常见的动力。</p>
+<p>……</p>
+<p>世间的罪恶，几乎总是来自愚昧无知，善意如不明智，就可能跟邪恶造成同样的损害。</p>
+<p>——《鼠疫》</p>
+</blockquote>
+<h3 id="思考笔记"><a href="#思考笔记" class="headerlink" title="思考笔记"></a>思考笔记</h3><p>这个月开始将日常折腾的收获记录到卡片笔记中，比如寻找某个解决方案或者工作流程，尝试了很多个产品或方法，挺花时间的。可能一段时间或若干年后，又会遇到这个需求要解决，之前的成果没有记录的话就会忘记，于是又要折腾一遍。虽然说折腾是一种乐趣，但是就结果而言还是需要更高效些。这次把尝试过程中，各种选择的优缺点及时记录下来，对于最终选择和注意事项也写明白，通过可以搜索的方式归档。</p>
+<p>只有被索引的知识，才存在被吸收内化的可能。</p>
+<p>另外，老唐再次提到了对于经济学的看法，跟自己的思考契合，遂一并记录下来，不再反复造轮子。</p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202402012227715.webp" alt="对经济学的解释"></p>
+<h3 id="技术收获"><a href="#技术收获" class="headerlink" title="技术收获"></a>技术收获</h3><p>这个月痛下决心，把较多的时间投入到博客的各项工作上，算是完成了阅读-思考-记录-输出成型的完整闭环。建立一个顺畅的工作流程非常关键，这是形成良好习惯的基础。</p>
+<ol>
+<li>使用 <strong>hexo</strong> 和 <strong>tailwindcss</strong> 框架来制作静态页面，利用 hexo 主题自带的模板发布文章，用之前设计好的页面模板收集游戏摄影截图，以及新开发一个页面实现菜品信息的查询。</li>
+<li>搞定了域名、对象存储和 CDN，实现国内外分流和云端图片处理，优化了代码流程。将静态博客发布到域名节点，并用 <strong>GitHub Actions</strong> 实现一键部署静态资源。</li>
+<li>文字工具采用支持 Markdown 语法所见即所得的编辑器 <strong>Typora</strong> ，并配置好图床和写稿时图片插入上传。文章中配图的处理交给本地应用 <strong>PhotoScape X</strong> 。页面评论采用 <strong>Twikoo</strong> 的支持。</li>
+<li>为了实现菜品信息查询，花了比较多时间学习 <strong>algolia</strong> 搜索工具的集成。虽然说大体满足了需求，但还是感叹过程中阅读技术文档的熟练度还不够。</li>
+</ol>
+<p>总得来说，能够赶在新春之前，完成页面的上线，算是基本完成了预定目标。但这些技术折腾都只是形式，真正重要的，还是日积月累将所思所想不断提炼、良好表达展现，为日后回顾复盘提供宝贵的资料。</p>
+<h3 id="美食烹饪"><a href="#美食烹饪" class="headerlink" title="美食烹饪"></a>美食烹饪</h3><p>这个月尝试的新菜式远远超出了预料，其实只要愿意动手，不怕麻烦，就会有收获，当然烹饪的熟练度和菜式还有很多提升空间。</p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202402021418143.webp" alt="6个新菜"></p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>标签：</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%97%A5%E5%B8%B8%E5%9B%9E%E9%A1%BE/"># 日常回顾</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">后退</a>
+                <span>· </span>
+                <a href="/">首页</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2024/01/24/hello-world/">hello world</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 陆思沉 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
