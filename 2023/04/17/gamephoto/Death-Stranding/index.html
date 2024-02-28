@@ -346,27 +346,29 @@
   </div>
 </section>
 
-
-    <!-- 
+<section class="bg-base-200">
+  
+    <div class="flex items-center justify-center py-12 lg:py-16">
+        <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
+          <!-- 
 <script src="https://cdn.staticfile.net/twikoo/1.6.27/twikoo.all.min.js"></script>
  -->
 
 <script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
 
 
-<section class="flex items-center justify-center py-12 lg:py-16 bg-base-200">
-    <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
-      <div  id="tcomment"></div>
-    </div>
-  
-  </section>
+  <div  id="tcomment"></div>
+
   <script>
   twikoo.init({
     envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
     el: '#tcomment', 
   })
   </script>
+        </div>      
+    </div>    
 
+</section>
 
 <script>
   Fancybox.bind('[data-fancybox="gallery"]', {

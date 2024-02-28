@@ -218,7 +218,7 @@
             <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>这是为网站摄影集制作的图片墙展示网页，第二版的模板实现了不同的主题效果。</p>
 <h3 id="页面截图"><a href="#页面截图" class="headerlink" title="页面截图"></a>页面截图</h3><p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202402181654591.webp" alt="赛博主题设备截图"></p>
 <p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202402181655028.webp" alt="暗黑主题设备截图"></p>
-<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202402181656036.webp" alt="第二版网页截图"></p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202402211735978.webp" alt="双主题堆叠效果"></p>
 <h3 id="成果复盘"><a href="#成果复盘" class="headerlink" title="成果复盘"></a>成果复盘</h3><p>在这一版的开发中，完成的主要的几点工作：</p>
 <ol>
 <li>使用 daisyui 来配合 tailwindcss ，利用其主题功能和部分组件模块，并通过 theme-change 来切换主题。</li>
@@ -258,6 +258,28 @@
 
 
     </article>
+
+    
+    <div class="flex items-center justify-center py-12 lg:py-16">
+        <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
+          <!-- 
+<script src="https://cdn.staticfile.net/twikoo/1.6.27/twikoo.all.min.js"></script>
+ -->
+
+<script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
+
+
+  <div  id="tcomment"></div>
+
+  <script>
+  twikoo.init({
+    envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
+    el: '#tcomment', 
+  })
+  </script>
+        </div>      
+    </div>    
+
 </div>
 
             </div>
