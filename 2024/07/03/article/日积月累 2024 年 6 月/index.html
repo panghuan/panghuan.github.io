@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="陆思沉">
+
+
+
+
+
+<title>日积月累 2024 年 6 月 | Meditations</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="https://jsd.cdn.zzko.cn/npm/theme-change@2.0.2/index.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "kjnowbcx0y");
+</script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Meditations" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+  <div class="drawer max-w-screen-2xl w-10/12 mx-auto">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full navbar">
+        <div class="flex-none md:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </label>
+        </div>
+        <div class="flex-1 px-2 mx-2">
+          <a href="/" class="font-bold">Meditations</a>
+        </div>
+        <div class="flex-none hidden md:block">
+          <ul class="menu menu-horizontal">
+            
+            <li><a class="" href="/">首页</a></li>
+            
+            <li><a class="" href="/article">文集</a></li>
+            
+            <li><a class="" href="/gamephoto">影集</a></li>
+            
+            <li><a class="" href="/cookbook">菜品</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <label class="cursor-pointer grid place-items-center">
+            <input type="checkbox" value="synthwave" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" />
+            <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-side">
+      <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class="menu p-4 w-40 min-h-full bg-base-200 items-center">
+        <!-- Sidebar content here -->
+        
+        <li><a class="" href="/">首页</a></li>
+        
+        <li><a class="" href="/article">文集</a></li>
+        
+        <li><a class="" href="/gamephoto">影集</a></li>
+        
+        <li><a class="" href="/cookbook">菜品</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</header>
+
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">展开内容</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">去到底部</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? '展开内容' : '折叠内容';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap prose leading-8">
+        <header class="post-header">
+            <h1 class="post-title">日积月累 2024 年 6 月</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        日期： 2024-07-03&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    分类：
+                            
+                                <a href="/categories/%E6%96%87%E9%9B%86/">文集</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>这里是对每月各事项进度所做的一个回顾，记录在阅读、生活等方面的思考和收获。这是写给自己的，在未来的某一天回顾，这些时光如同雁过留痕，能看到些许印记。</p>
+</blockquote>
+<h3 id="to-do-list-进度表"><a href="#to-do-list-进度表" class="headerlink" title="to-do-list 进度表"></a>to-do-list 进度表</h3><p>没想到这个六月会这么连绵多雨，除了需要与蚊子斗智斗勇之外，总体而言是比较适合阅读和锻炼的。</p>
+<p>二季度结束，是该审视一下半年来的项目内容进展。</p>
+<p>本来的打算是，目标的制定应该兼顾推动力和完成度的正反馈之间。如果目标订得太低基本能够轻易完成，那么说明挑战性不够，需要更多的推着自己行动起来。如果目标订得太高，就过于不切实际，没有了进度观察指导意义。</p>
+<p>半年下来，尽管各个项目的进度先后不一，但是总体而言还是有所成效的，能够按照既定的计划一步一步去完成，是对于拖延症和慵懒习惯的有力对抗。需要改善的空间也是存在不少，由于半年的样本还不足以克服季节性差异，这部分就留到年度回顾的时候再去讨论修正了。</p>
+<p>这两个月阅读分析了更多公司的情况，介于浅印象和深度思考之间，因此暂不对此进行归类，还需要把研究思考做更好的输出才有价值。</p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202407031532864.webp" alt="2024-6"></p>
+<h3 id="书籍阅读"><a href="#书籍阅读" class="headerlink" title="书籍阅读"></a>书籍阅读</h3><p>去年看完《罪与罚》之后，很自然地就会想要阅读这本《卡拉马佐夫兄弟》。可能也是因为这本书在网络上被其他人很多次提到，但直到读完才了解到，这部神作陀思妥耶夫斯基并没有来得及写完，就去世了，怪不得读到最后会觉得完结的情景比较奇怪。但这依然无法阻止这部作品得到了很高的评价，特别是在作家群体中。</p>
+<p>老实说，这两本书上下册的大部头啃了大半年，断断续续地读，由于文化的差异和宗教的描写，一度在理解上让人很崩溃，只能硬着头皮读。读这本书需要考虑书中的历史背景和当时的主流思潮，以及对作者的思想有些了解就更好。</p>
+<p>作者对于人物的描写刻画是很厉害的，对于情节的展开也充满了表现力。大量的语言描写和心理刻画，使得人物形象丰满深刻。之所以有些内容难读，恰恰是因为其思想非常深邃，对人心的洞察很细腻，因而作品蕴含了哲学思想。</p>
+<p>我在豆瓣评语中写到：「越追求道德的真实和完备，就越会因为具体的人而痛苦。很多时候无法爱具体的人，也正在于无法爱自己。」</p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202407031601207.webp" alt="卡拉马佐夫兄弟"></p>
+<p>下面这句话被很多次衍伸引用过，并且流传极光：「爱具体的人，不要爱抽象的人，爱生活，不要爱生活的意义。因为具体的人是不可爱的。人越是喜欢探讨抽象概念，人越是觉得自己崇高，因为你越是觉得抽象的人可爱，越觉得身边的人的不可爱，因为忙着爱人类，以至于没有时间爱具体的人。」。</p>
+<blockquote>
+<p>我爱人类，但我对自己实在大惑不解：我越是爱整个人类，就越是不爱具体的人，即一个一个的人。</p>
+<p>……</p>
+<p>阿辽沙感叹道，“我认为，在世上人人都应该首先爱生活。”<br>“爱生活甚于爱生活的意义？”<br>“一定得这样，像你所说的超越逻辑去爱，一定得超越逻辑，那时我才理解其含义……”</p>
+<p>——《卡拉马佐夫兄弟》</p>
+</blockquote>
+<p>这是很多时候，人们成为「言语的巨人，行动的矮子」的原因吧。</p>
+<blockquote>
+<p>梦想中的爱比较起来，切实的爱是一件严酷和令人生畏的事情。梦想中的爱图的是急功近利、立竿见影，渴望做出人人注目的壮举。怀着这样的梦想确实连命也舍得，只要这过程不持续很久，而是像在舞台上那样快快结束，只要人人都瞧着他表示赞许。切实的爱则需要工作和毅力，对于某些人来说兴许还是一门学问。</p>
+<p>——《卡拉马佐夫兄弟》</p>
+</blockquote>
+<hr>
+<p>这本《一如既往》比不上作者的上一本书《金钱心理学》，通篇读下来有一种畅销书的营销感。虽然书中讲的道理没什么问题，但缺少了深刻和厚重的论述。当然，作者也在书里自己给出了解答。</p>
+<p>我给出的豆瓣评语是：「就如作者自己所言，他只是在以畅销书的形式将故事讲好。因此，这本书的定位是大众闲暇娱乐的读物，很好读，但缺乏体系和原创。或许当做生活智慧的素材案例集更好。」</p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202407031635021.webp" alt="一如既往"></p>
+<p>摘抄几段鸡汤吧：</p>
+<blockquote>
+<p>生活中大多数重要的事情，无论是爱情、事业还是投资，其价值都来自两点：耐心和稀缺性。耐心指做事循序渐进，顺其自然；稀缺性指珍视事物最终实现的独特价值。</p>
+<p>——《一如既往》</p>
+</blockquote>
+<blockquote>
+<p>美国作家罗伯特·格林曾经写道：“追求确定性是人最大的心理疾病。”</p>
+<p>——《一如既往》</p>
+</blockquote>
+<blockquote>
+<p>物理学家艾伯特·巴特利特说过：“人类最大的弱点就是无法理解指数函数。”</p>
+<p>——《一如既往》</p>
+</blockquote>
+<hr>
+<p>《巴菲特的伯克希尔崛起》这本书的名字太过直译了，不过作者本来就是想写成系列，从不同阶段来记录分析巴菲特的各个时期的案例。</p>
+<p>对于普通人来说，恰恰是其从 0-1、1-10 的经历是最具有借鉴价值的，特别是青年和中年时期的巴菲特，其思想上有很多可以值得同年龄阶层的投资者去对照领悟，早期的案例由于金额较小，对于大家也更有对比分析的价值。</p>
+<p>总的来说，这本书的作者行文结构很好，作为案例研究来说可读性不错，很适合普通投资者来学习。</p>
+<p>我给出的豆瓣评语是：「杨天南翻译得不错，阅读体验良好。案例集的价值在于给当下的企业分析提供对照。」</p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202407031644568.webp" alt="巴菲特的伯克希尔崛起"></p>
+<p>作者在文中点评的案例，很多内容都与巴菲特多次公开表达的内容一脉相承，我也写下了自己的笔记。</p>
+<blockquote>
+<p>寻找过程的本身就是有价值的，即使一家好公司在分析的时候市价过高，不适宜买入，也可以继续追踪，等到有朝一日股价回落到合理水平，在内在价值高于市场价格的情况下，就有了舒适的安全边际。</p>
+<p>——《巴菲特的伯克希尔崛起》</p>
+<p>不仅仅如此。对于价值投资者来说，追求理性是一种道德责任，寻求智慧是一种本能。翻石头的过程，本身就是一种回报。如果只能感受到赚钱的乐趣，不能感受到求知的乐趣，那么这件事是没法持续做好的。</p>
+</blockquote>
+<blockquote>
+<p>辛普森告诉罗伯特·迈尔斯，令自己兴奋的成就感来源于“真正了解企业，当我对一个不太了解的业务有了一些见解时，我会非常兴奋”。</p>
+<p>——《巴菲特的伯克希尔崛起》</p>
+<p>投资的第一回报是认知，副产品才是财富。<br>这才是做好这件事的根本驱动力。<br>可惜，知易行难。</p>
+</blockquote>
+<h3 id="思考笔记"><a href="#思考笔记" class="headerlink" title="思考笔记"></a>思考笔记</h3><p>由于我国特殊的政策环境，很多行业表现出来的特性是半垄断现象。其中不乏一些表现优异的公司，具备这个特质从而获得了不错的经营成果，看上去似乎是具备护城河的。</p>
+<p>但是要注意区分，护城河是内生的还是外在的。如果这种护城河的存在，依靠的是外部条件，这种特许经营权是主管部门给予的，比如某些行业政策，那么一旦政策变动，护城河就松动了。比如文教领域、能源领域、房地产领域、金融领域，这种强监管领域有很多这样的公司。</p>
+<p>当然，那些具备强大内生护城河的公司，也会受到政策影响。比如白酒消费税对茅台的影响，2021 年互联网政策对腾讯的冲击。但茅台的核心产区需要的酿酒环境没法搬走，腾讯已经建成的网络效应也不是 A4 纸能够轻易拆解的，那些具备内生护城河的公司，竞争优势无法被轻易剥夺，更不会被竞争对手打劫。</p>
+<p>如果更进一步做极限分析，腾讯的核心优势本源是组织和员工，茅台的核心优势根源是地理区位。组织可以被重组，员工可以被抢夺，但地理环境是无法更改的。所以茅台从护城河的视角看，确实是 bug 级别的。</p>
+<hr>
+<blockquote>
+<p>《哈佛商业评论》杂志曾指出，杰瑞·宋飞后来终止《宋飞正传》的制作是因为编剧的创作枯竭了。采访还问及，如果宋飞和节目联合制作人拉里·戴维使用麦肯锡这样的咨询公司来提升创作效率，他们是否可以避免创作枯竭，让节目继续做下去。</p>
+<p>宋飞问，麦肯锡擅长创作喜剧吗？</p>
+<p>杂志社回答，不擅长。</p>
+<p>“那我就不需要他们啊。”宋飞说，“如果你的效率很高，你的方式肯定有问题。正确的方式永远充满困难。这个节目之所以能够成功，是因为我从每一个小细节进行了严格把控——每个词，每行对白，每次拍摄，每次剪辑，每次选角。”</p>
+<p>如果你的效率很高，你的方式肯定有问题。</p>
+</blockquote>
+<p>很多投机取巧的事情，往往偏离了本质。之所以忽视本质，恰恰是因为把本质的事情做好，并不容易。</p>
+<p>想到了曾经做过一段时间跨境电商的经历。其中有一个环节是做广告投放，每个电商平台都有各自不同的广告营销产品，然而对于卖家来说，这些产品就如同黑盒模型一般。电商的营销人员会经常组织卖家培训，一同策划广告投放的各种打法策略。</p>
+<p>很多卖家没有主货源，只做进出货的转手生意，研究流量就成了销售的一个重要课题。广告销售会陪同卖家制定出各种烧钱的方法。然而卖家心里其实是没底的，所有的投入都是建立在过往经验上的一种投放尝试，你永远不知道技术模型背后的一次微调意味着什么。</p>
+<p>也许有部分卖家能够通过这种方法获得流量，从而做大将店铺或者单品跑出来。而广告本质是所有投放者的竞价博弈，零和博弈。更多的卖家可能也只是把钱烧掉了。</p>
+<p>厂商把产品生产出来，卖到终端消费着手中，有着诸多环节，营销终究只是其中的一个。研发、生产、选品都不是一件轻松的事。仅在一个环节上投机取巧是不够的，有的人能突围，但大部分会死掉。</p>
+<p>因为捷径是一条绕远的路。</p>
+<hr>
+<p>很久没有看电影，无意间看到《重返荣耀》这个名字，发现可能会有兴趣。这是一部令人有些感慨和共鸣的作品。</p>
+<p>主人公本来是一位出色的职业球手，还有着情投意合的姑娘陪伴，但一战爆发了，等他回来已经是十年后了。电影中有一段对话：</p>
+<blockquote>
+<p>朱诺：“已经太久了。”</p>
+<p>阿黛尔：“不，才一瞬而已。”</p>
+</blockquote>
+<p>这句话后来球童贝格也同样对朱诺说过。</p>
+<p>十年，不同的眼光看待，感受到的尺度不一样。</p>
+<p>很多时候，人们都是困在了自己的尺度里。基于自己的尺度展开幻想，把自己给束缚住。</p>
+<p>要找回自己，就要忽视掉所有的观众，全情去感受只属于自己的球场。</p>
+<p>信心总是无可名状的，对于生活的感觉也是。人生终究是与自己同行的一段旅程。</p>
+<p>只有自己才能对自己施加不求回报无条件的爱。</p>
+<h3 id="游戏往事"><a href="#游戏往事" class="headerlink" title="游戏往事"></a>游戏往事</h3><p>JRPG 领域里毫无疑问的顶流存在。</p>
+<p>《最终幻想》系列延续至今，七代无疑是浓墨重彩的一部作品。得益于两位女主角超高的人气，放在三十年后的今天依然是讨论的焦点。重制版把场景渲染和角色演出提升到了新的高度。</p>
+<div style="position: relative; width: 100%; 
+    padding-top: calc(100% * 1080 / 1920);">
+    <iframe src="//player.bilibili.com/player.html?aid=112722238768630&bvid=BV16Uh6enEE2&cid=500001603797611&p=1&autoplay=0&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; top: 0;">
+    </iframe>
+</div>
+
+
+
+<h3 id="观影留念"><a href="#观影留念" class="headerlink" title="观影留念"></a>观影留念</h3><p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202407031731586.webp" alt="迷宫饭"></p>
+<p>轻松，欢笑。</p>
+<p>一部幻想题材的作品，不得不佩服作者的脑洞大开。</p>
+<p>旅行番，美食番，加上B站的弹幕段子手们，让这部作品的人物形象精彩纷呈。</p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>标签：</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%97%A5%E5%B8%B8%E5%9B%9E%E9%A1%BE/"># 日常回顾</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">后退</a>
+                <span>· </span>
+                <a href="/">首页</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2024/06/01/article/%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF%202024%20%E5%B9%B4%205%20%E6%9C%88/">日积月累 2024 年 5 月</a>
+            
+        </section>
+
+
+    </article>
+
+    
+    <div class="flex items-center justify-center py-12 lg:py-16">
+        <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
+          <!-- 
+<script src="https://cdn.staticfile.net/twikoo/1.6.27/twikoo.all.min.js"></script>
+ -->
+
+<script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
+
+
+  <div  id="tcomment"></div>
+
+  <script>
+  twikoo.init({
+    envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
+    el: '#tcomment', 
+  })
+  </script>
+        </div>      
+    </div>    
+
+</div>
+
+            </div>
+            <footer id="footer" class="footer footer-center">
+    <div class="copyright">
+        <span>
+            <a href="/atom.xml" target="_blank">
+                <svg class="inline" style="width: 0.8em;height: 0.8em;vertical-align: baseline;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3310"><path d="M832.512 63.488q26.624 0 49.664 10.24t40.448 27.648 27.648 40.448 10.24 49.664l0 704.512q0 26.624-10.24 49.664t-27.648 40.448-40.448 27.648-49.664 10.24l-704.512 0q-26.624 0-49.664-10.24t-40.448-27.648-27.648-40.448-10.24-49.664l0-704.512q0-26.624 10.24-49.664t27.648-40.448 40.448-27.648 49.664-10.24l704.512 0zM188.416 923.648q19.456 0 36.864-7.168t30.208-19.968 19.968-30.208 7.168-36.864-7.168-36.864-19.968-30.208-30.208-19.968-36.864-7.168q-20.48 0-37.376 7.168t-30.208 19.968-20.48 30.208-7.168 36.864 7.168 36.864 20.48 30.208 30.208 19.968 37.376 7.168zM446.464 897.024l36.864 0q15.36 0 30.208 0.512t31.232 0.512 36.864-1.024q0-93.184-35.84-175.616t-97.28-143.872-143.872-96.768-175.616-35.328q-1.024 24.576-1.024 39.936l0 28.672q0 14.336 0.512 29.184t0.512 37.376q65.536 0 123.392 24.576t100.864 67.584 68.096 100.864 25.088 123.392zM707.584 894.976q36.864 0 49.152 0.512t18.432 1.536 15.872 1.024 41.472-2.048q0-145.408-55.296-272.896t-150.528-222.72-223.232-150.528-273.408-55.296q-1.024 25.6-1.024 36.864l0 16.384q0 4.096 0.512 5.632t0.512 7.168 0.512 18.432 0.512 40.448q119.808 0 224.768 45.056t183.296 123.392 123.392 183.296 45.056 223.744z" p-id="3311"></path></svg>
+            RSS</a> © 陆思沉 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a>
+        </span>
+    </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
