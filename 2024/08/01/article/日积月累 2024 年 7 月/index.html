@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="陆思沉">
+
+
+
+
+
+<title>日积月累 2024 年 7 月 | Meditations</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="https://jsd.cdn.zzko.cn/npm/theme-change@2.0.2/index.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "kjnowbcx0y");
+</script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Meditations" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+  <div class="drawer max-w-screen-2xl w-10/12 mx-auto">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full navbar">
+        <div class="flex-none md:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </label>
+        </div>
+        <div class="flex-1 px-2 mx-2">
+          <a href="/" class="font-bold">Meditations</a>
+        </div>
+        <div class="flex-none hidden md:block">
+          <ul class="menu menu-horizontal">
+            
+            <li><a class="" href="/">首页</a></li>
+            
+            <li><a class="" href="/article">文集</a></li>
+            
+            <li><a class="" href="/gamephoto">影集</a></li>
+            
+            <li><a class="" href="/cookbook">菜品</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <label class="cursor-pointer grid place-items-center">
+            <input type="checkbox" value="synthwave" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" />
+            <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-side">
+      <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class="menu p-4 w-40 min-h-full bg-base-200 items-center">
+        <!-- Sidebar content here -->
+        
+        <li><a class="" href="/">首页</a></li>
+        
+        <li><a class="" href="/article">文集</a></li>
+        
+        <li><a class="" href="/gamephoto">影集</a></li>
+        
+        <li><a class="" href="/cookbook">菜品</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</header>
+
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">展开内容</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">去到底部</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? '展开内容' : '折叠内容';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap prose leading-8">
+        <header class="post-header">
+            <h1 class="post-title">日积月累 2024 年 7 月</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        日期： 2024-08-01&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    分类：
+                            
+                                <a href="/categories/%E6%96%87%E9%9B%86/">文集</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>这里是对每月各事项进度所做的一个回顾，记录在阅读、生活等方面的思考和收获。这是写给自己的，在未来的某一天回顾，这些时光如同雁过留痕，能看到些许印记。</p>
+</blockquote>
+<h3 id="to-do-list-进度表"><a href="#to-do-list-进度表" class="headerlink" title="to-do-list 进度表"></a>to-do-list 进度表</h3><p>七月的天气简直一成不变，每天都是一个模板。幸好月末的台风带来了稍许影响，看见了雨水凉爽了几天。</p>
+<p>转眼间就到了下半年，维持住基本的阅读和思考时间的同时，也做到了提升运动的频次和保持住身型。</p>
+<p>牢记摒弃碎片化的消息和毫无价值的人云亦云，将注意力留在主要问题上。</p>
+<p>同时开始使用多邻国寻找英语学习的感觉，虽然起初是为了提升英语财报的阅读能力，但这次并不着急，更多地去感受英语思维和表达习惯，并且贵在坚持。</p>
+<p>看了更多的公司，越来越理解许多基金经理在入门多年后，往往才明白去繁就简把书读薄，真正值得保留的都是稀缺的。</p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202408011529577.webp" alt="2024-7"></p>
+<h3 id="书籍阅读"><a href="#书籍阅读" class="headerlink" title="书籍阅读"></a>书籍阅读</h3><p>本来是为了了解美妆护肤行业而去读的，结果发现这本书更多的不是讲的公司，而是个人的故事。</p>
+<p>一个行业从无到有，一个公司从千军万马里突围，一定是做对了某些事情。纵然任何人和事都会有时代背景，也会有运气因素，但也可以从书中找到那些成功者们的特质，他们的经历是如何将他们塑造成了成功者。</p>
+<p>美妆护肤行业，不想我起初预想的那样，是一个产品力和生物化工科技成分很强的行业。更多的，在公司发展的过程中，靠的是营销、广告传播、品牌力建设，是一个更加考验经营者管理水平而不是研发水平的行业。换句话说，“医疗”的属性更轻，“消费”的属性更重。在几十年后的电商时代，各大品牌为了留住用户，依旧呈现出不低的销售费率，即便毛利率不俗，但是在一个充分竞争的市场，在一个新品层出不穷的市场，为了维持品牌影响力和产品矩阵，毛利率到净利率之间出现巨大的损耗。</p>
+<p>以史为鉴，从过去的这些公司起伏中，可以找到今天这些新兴公司所要面临的困难和挑战。哪些是不变的，哪些只不过是换了一种形式将重复上演，给了我很好的提醒。</p>
+<p>我在豆瓣评语中写到：「这是关于个人的传记而不是公司的，并且故事带有作者的滤镜。总的来说，美妆护肤行业是一个考验经营者水平的行业，作者也展现了其不凡的才能。」</p>
+<p><img src="https://image-meditations-top.oss-cn-hongkong.aliyuncs.com/pic/202408011530898.webp" alt="成为雅诗兰黛"></p>
+<p>作者反复重复：“你由你的分销定义。”很多品牌为了扩大受众和市场，轻易地改变了自己的定位，让不同成色的分销商进来分一杯羹，销量或许能有一时的起色，但分销商会彼此竞争，从而冲垮了自身的产品体系。这种情况屡见不鲜，至今仍然广泛存在。</p>
+<blockquote>
+<p>如果你在奢侈品市场，那就待在奢侈品市场。不要因为某个与品牌价值不符的分销渠道可能带来的销量而鬼迷心窍。</p>
+<p>——《成为雅诗兰黛》</p>
+</blockquote>
+<p>作者回忆了一些他当年的管理心得和小技巧。</p>
+<blockquote>
+<p>人们不只会为了钱而工作，他们还会为了获得认可而工作。<br>而且如果你经常感谢他们的话，你就可以指出他们在哪些方面可以改进。一旦别人接受了你的赞扬，他就失去了拒绝批评的权利。</p>
+<p>——《成为雅诗兰黛》</p>
+</blockquote>
+<h3 id="思考笔记"><a href="#思考笔记" class="headerlink" title="思考笔记"></a>思考笔记</h3><blockquote>
+<p>巴菲特说：“不要拿对自己重要的东西去换对自己不重要的东西。”比如，不要拿生命安全、身心健康、时间和真爱等去换没那么重要的“更多的钱”。财富无穷，而你我大概率最多有三万多天。我们要把有限的时间花在值得做好的事情上，不值得做好的事，就不值得去做。</p>
+</blockquote>
+<p>这都是典型的道理都懂，但每天过日子的时候去无法做好。因为人没法一直保持审慎的态度生活，这只能成为一种习惯，去决定自己的取舍。</p>
+<p>人生的努力就是为了有得选。当能够选择和放弃时，想清楚自己的道路，勇敢地去取舍。</p>
+<hr>
+<blockquote>
+<p>作为家族企业，我们从未有过“分家”这类事情出现，我们为此感到非常自豪。现在我也不想看到类似的事情发生。于是在一个夜晚，我意识到我们正面临着一个无法解决的难题。</p>
+<p>我们应该如何正视这个问题？</p>
+<p>金钱有可能导致家庭分裂，并造成持久的仇恨、怨恨和痛苦。上市可以让钱的问题不再是问题。</p>
+<p>——《成为雅诗兰黛》</p>
+</blockquote>
+<p>这一段出乎意料地收获了一些洞见。</p>
+<p>上市的诸多利弊，已经比较清楚了。但是这里存在了一个不得不通过上市来解决的问题，或者必须有一个所有权量化变现的途径。</p>
+<p>对于企业的所有者集团来说，通常是家族，想要所有人达成统一的意见是超级困难的。</p>
+<p>这意味着一种“同谐”。</p>
+<p>这是一种哲学上的不可能境地。家族越庞大，同谐越困难。而努力维持同谐的状态，本身就要付出极高的成本。</p>
+<p>必须要有一种方式，让不同的人可以做出不同的选择。而不是只能服从一个意志。</p>
+<p>即便是华为，也存在内部股权流通交易的方式。</p>
+<p>但上市依旧是下策，上策是志同道合，只是上策难以达成时的妥协。或者说，当内部的摩擦成本大到无法接受时，宁肯接受上市带来的诸多弊端时，那么就是选择上市的时机了。而这种内部的潜在损耗，在考察上市行为时，常常被忽略了。</p>
+<h3 id="游戏往事"><a href="#游戏往事" class="headerlink" title="游戏往事"></a>游戏往事</h3><p>PS 订阅会员到期暂时没有续费，考虑到八月的黑神话上市，和其他一些值得玩的作品，并不在订阅库中。趁着空档期将米哈游的三部作品的进度推到最新。</p>
+<p>长期运营的游戏，与叙事型的单机游戏，完全是两种不同的产品，不能用各自的标准去评价彼此。我认同UP主@智能路障 的观点，大型3A单机游戏的竞争对手是电影、长视频，而手游的竞争对手是短视频。工业制作体系的逻辑，受众的体验状态，是截然不同的。</p>
+<p>《星穹铁道》在匹洛康尼这一故事线，所呈现出来的主题和哲思，无疑使其从三部作品中脱颖而出。</p>
+<p>同时，在一个内容无限而时间有限的时代，取舍对于游戏选择同样重要。</p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>标签：</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%97%A5%E5%B8%B8%E5%9B%9E%E9%A1%BE/"># 日常回顾</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">后退</a>
+                <span>· </span>
+                <a href="/">首页</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2024/07/03/article/%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF%202024%20%E5%B9%B4%206%20%E6%9C%88/">日积月累 2024 年 6 月</a>
+            
+        </section>
+
+
+    </article>
+
+    
+    <div class="flex items-center justify-center py-12 lg:py-16">
+        <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
+          <!-- 
+<script src="https://cdn.staticfile.net/twikoo/1.6.27/twikoo.all.min.js"></script>
+ -->
+
+<script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
+
+
+  <div  id="tcomment"></div>
+
+  <script>
+  twikoo.init({
+    envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
+    el: '#tcomment', 
+  })
+  </script>
+        </div>      
+    </div>    
+
+</div>
+
+            </div>
+            <footer id="footer" class="footer footer-center">
+    <div class="copyright">
+        <span>
+            <a href="/atom.xml" target="_blank">
+                <svg class="inline" style="width: 0.8em;height: 0.8em;vertical-align: baseline;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3310"><path d="M832.512 63.488q26.624 0 49.664 10.24t40.448 27.648 27.648 40.448 10.24 49.664l0 704.512q0 26.624-10.24 49.664t-27.648 40.448-40.448 27.648-49.664 10.24l-704.512 0q-26.624 0-49.664-10.24t-40.448-27.648-27.648-40.448-10.24-49.664l0-704.512q0-26.624 10.24-49.664t27.648-40.448 40.448-27.648 49.664-10.24l704.512 0zM188.416 923.648q19.456 0 36.864-7.168t30.208-19.968 19.968-30.208 7.168-36.864-7.168-36.864-19.968-30.208-30.208-19.968-36.864-7.168q-20.48 0-37.376 7.168t-30.208 19.968-20.48 30.208-7.168 36.864 7.168 36.864 20.48 30.208 30.208 19.968 37.376 7.168zM446.464 897.024l36.864 0q15.36 0 30.208 0.512t31.232 0.512 36.864-1.024q0-93.184-35.84-175.616t-97.28-143.872-143.872-96.768-175.616-35.328q-1.024 24.576-1.024 39.936l0 28.672q0 14.336 0.512 29.184t0.512 37.376q65.536 0 123.392 24.576t100.864 67.584 68.096 100.864 25.088 123.392zM707.584 894.976q36.864 0 49.152 0.512t18.432 1.536 15.872 1.024 41.472-2.048q0-145.408-55.296-272.896t-150.528-222.72-223.232-150.528-273.408-55.296q-1.024 25.6-1.024 36.864l0 16.384q0 4.096 0.512 5.632t0.512 7.168 0.512 18.432 0.512 40.448q119.808 0 224.768 45.056t183.296 123.392 123.392 183.296 45.056 223.744z" p-id="3311"></path></svg>
+            RSS</a> © 陆思沉 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a>
+        </span>
+    </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
