@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="陆思沉">
+
+
+
+
+
+<title>日积月累 2024 年 9 月 | Meditations</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="https://jsd.cdn.zzko.cn/npm/theme-change@2.0.2/index.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "kjnowbcx0y");
+</script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Meditations" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+  <div class="drawer max-w-screen-2xl w-10/12 mx-auto">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full navbar">
+        <div class="flex-none md:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </label>
+        </div>
+        <div class="flex-1 px-2 mx-2">
+          <a href="/" class="font-bold">Meditations</a>
+        </div>
+        <div class="flex-none hidden md:block">
+          <ul class="menu menu-horizontal">
+            
+            <li><a class="" href="/">首页</a></li>
+            
+            <li><a class="" href="/article">文集</a></li>
+            
+            <li><a class="" href="/gamephoto">影集</a></li>
+            
+            <li><a class="" href="/cookbook">菜品</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <label class="cursor-pointer grid place-items-center">
+            <input type="checkbox" value="synthwave" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" />
+            <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-side">
+      <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class="menu p-4 w-40 min-h-full bg-base-200 items-center">
+        <!-- Sidebar content here -->
+        
+        <li><a class="" href="/">首页</a></li>
+        
+        <li><a class="" href="/article">文集</a></li>
+        
+        <li><a class="" href="/gamephoto">影集</a></li>
+        
+        <li><a class="" href="/cookbook">菜品</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</header>
+
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">展开内容</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">去到底部</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? '展开内容' : '折叠内容';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap prose leading-8">
+        <header class="post-header">
+            <h1 class="post-title">日积月累 2024 年 9 月</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        日期： 2024-10-04&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    分类：
+                            
+                                <a href="/categories/%E6%96%87%E9%9B%86/">文集</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>这里是对每月各事项进度所做的一个回顾，记录在阅读、生活等方面的思考和收获。这是写给自己的，在未来的某一天回顾，这些时光如同雁过留痕，能看到些许印记。</p>
+</blockquote>
+<h3 id="to-do-list-进度表"><a href="#to-do-list-进度表" class="headerlink" title="to-do-list 进度表"></a>to-do-list 进度表</h3><p>三季度结束。其实一晃眼还是很快的。</p>
+<p>炎热的夏季也终于迎来了尾声，总体来说，今年的夏天还算好，不是太过炎热。6 月进入高温的时间点就已经比较靠后了，在国情前的一段时间天气也早早凉了下来。所以这一年空调的负荷也不那么大。</p>
+<p>但愿早早入秋，能够带来更长一些时间秋季的感觉，以往都太过短暂了。</p>
+<p>换季带来了身体上的不适应，这种不适又带来了慵懒感，所以运动的节奏明显下降了。</p>
+<p>八月份的财报季并无太大新意，经济数据依旧不见起色，但是月底的重磅炸弹确实太过突然，资本市场一下子就被点燃了。犹如一条被压抑了很久而总算脱缰的野马，究竟会疯狂到何种程度，让我们拭目以待。</p>
+<p>在这个时刻，内心的平静尤为可贵。能够坚持打磨自己的策略，继续专注于发现更多的盲点和 know-how 的底层知识，更是显得尤为可贵。这是行走在这条命途上，真正能够去独立自主进行决策，而必经的阶段。</p>
+<p><img src="https://image.meditations.top/pic/202410040934501.webp" alt="2024-9"></p>
+<h3 id="书籍阅读"><a href="#书籍阅读" class="headerlink" title="书籍阅读"></a>书籍阅读</h3><p>《品牌帝国》这本书是看到有人推荐，可以很好地了解服装行业的一本书籍。总之，属于那种急需的去深入了解行业现状的，充满实实在在见解的干货内容。</p>
+<p>这本书既有讲到全球服装巨头的经营逻辑，也有提到国内一些知名服装品牌的发展现状。除了成功的典型，也有失败的案例，既有作者赞赏的做法，也有作者着重批评的做法。</p>
+<p>但同时，这本书不可避免地体现出作者浓厚的主观色彩，特别是体现在对国外巨头那些高瞻远瞩的战略执行的偏爱，对国内同行仍然停留在短期视野格局的失望。在这一点上，似乎忽视了我们这个特定的历史阶段的现实国情。</p>
+<p>服装行业是一种充满了竞争和不确定性的行业，也是很多投资者退避三舍的行业。虽然这个行业在我国有着长足的发展，但从投资的角度，还是有一些自身目前看来难以克服的问题。之所去阅读这本书，也是需要去理解和寻找一些相关企业的确定性。</p>
+<p>从书中也可以了解到，各个品牌的从业者是怎么工作的，上新、折扣、库存清理的逻辑是如何展开的，从消费者的角度来看，自己去购买这些品牌的产品，也可以做到心中有数。</p>
+<p>我在豆瓣评语中写到：「作者有服装行业的长期从业经验，展示出了结合业务分析财务的卓越能力。每个案例各有特色，文字的可读性也较强很好理解。总得来说，读者通过业内人的视角看问题还是颇为难得的。」</p>
+<p><img src="https://image.meditations.top/pic/202410040937779.webp" alt="品牌帝国"></p>
+<p>就从经商的角度而言，书中也提到了一些基本但却被经销商忽视的规律。</p>
+<blockquote>
+<p>服装销售最大的成本与风险，其实是时间，这在今天几乎成了所有人的共识。而垂直整合模式，减少了大量的不必要的中间环节，大大地节省了时间。</p>
+<p>——《品牌帝国》</p>
+</blockquote>
+<p>作者在服装行业有着长期从业的经验，因此具备了深入的洞察力，并且难得的同时具备业务和财务的视角。</p>
+<blockquote>
+<p>注重购物体验，是以商品的成交为最终目的，每一次商品成交即意味着一笔生意的结束，商家会费尽一切力量去做有利于商品成交的事，无论是快速供应链还是大数据精准营销，包括渠道多元化（时髦的说法叫线上、线下打通）、CRM管理等都是为了促进商品销售的快速成交。重视使用体验则完全不同，重视使用体验意味着销售成交仅是刚刚开始。</p>
+<p>——《品牌帝国》</p>
+</blockquote>
+<hr>
+<p>一本存在主义团体治疗大师的一生回忆录。</p>
+<p>这本书并不是关于他在治疗领域的著作，而是关于一个人如何面对自己，回望自己的一生。</p>
+<p>作者的坦诚，令人动容，这无疑需要巨大的勇气。</p>
+<p>读完这本书，感触最深的一点还是，无论何时，都要真诚的面对自己，只有这样才能诚实地面对世界。真实，本身就是这个世界最强大的力量。</p>
+<p>我给出的豆瓣评语是：「其实人这一辈子，与之相处最久的是自己。文如其人，没有华丽的词句，只有伴随一生的真诚。」</p>
+<p><img src="https://image.meditations.top/pic/202410041047151.webp" alt="成为我自己"></p>
+<p>作者的文笔很好，朴素又亲切，阅读这样的文字本身就能抚慰人心。同样，作者也在他的那些人生经历中，从他的那些来访者中找到了慰藉。</p>
+<blockquote>
+<p>同样的，这也让我们感到释怀，人生中很多不能如愿的期望终须我们谦卑地接受，并且继续前行。</p>
+<p>——《成为我自己》</p>
+</blockquote>
+<blockquote>
+<p>治疗中的变革力量不是理性的洞察，不是解释，不是宣泄，相反，而是两个人之间深刻的真诚相遇。</p>
+<p>——《成为我自己》</p>
+</blockquote>
+<p>这就是那种，一句话影响人一生的案例。很庆幸，她说了出来，恰恰是以这么俏皮的方式，才让作者终生铭记。</p>
+<blockquote>
+<p>我是她的面包和奶油。我从来没有忘记那句话和那个时刻。当我和一位患者在一起，对正在发生什么毫无头绪，不能说出有帮助或者清晰的话的时候，这句话就常常回响在我的脑海里。</p>
+<p>——《成为我自己》</p>
+</blockquote>
+<h3 id="思考笔记"><a href="#思考笔记" class="headerlink" title="思考笔记"></a>思考笔记</h3><p>再回头读到孟岩在几个月前写下的文字。</p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Nu16xFYIInSZN5hjW-avrw">🔗知识的缝隙</a></p>
+<p>「前一段和一位朋友聊天，他问我：</p>
+<p>投资大师都说能力圈，究竟什么是能力圈？</p>
+<p>我回答他说：</p>
+<p>真正的能力圈一定不需要思考，你一下子就知道自己拥有这个能力。</p>
+<p>能力圈就像前面说的 Unique Ability，当你真的拥有的时候，自然会知道的。」</p>
+<p>孟岩在公众号里提到了这一点，真正的能力圈是填满了知识的缝隙然而却并不察觉的。</p>
+<p>那么，可以对照检查一下，自己的能力圈在哪里？</p>
+<p>是的，我有一些特质，这些特质能够塑造我的一些能力，但这还不足以成为能力圈，还有大量的缝隙没有填满。</p>
+<p>直到有一天，我能够笃定地面对世界，那么我知道，我具备能力圈了。</p>
+<p>孟岩在后文也提到了，关于构建能力圈的基础。</p>
+<p>「如果当我们真的找到了自己的热爱时，能不能去做出这个选择呢？</p>
+<p>它可能取决于你自己设计的环境：</p>
+<p>比如家人是否支持，</p>
+<p>比如你已经积累了足够的经济条件，</p>
+<p>比如你自己的内在记分牌是不是可以不在意很多世俗的评价」</p>
+<p>虽然，这只是基础，但我正走在这条路上。</p>
+<p>完全说不上充分但已足够满足我内心需要的经济条件。</p>
+<p>以及内在的追求，并不在意世俗包括家人的眼光。我曾经经历过的岁月，在这一点上最终变成了馈赠。</p>
+<p>「更重要的是开始，把手弄脏去和真实世界接触。</p>
+<p>同时保持开放，不断给自己的生活增加一些方差，尝试一些新的东西。</p>
+<p>在这个过程中，勇敢地追随自己的审美、兴趣和好奇心，慢慢排除选项，同时让自己不断成长。」</p>
+<hr>
+<p>老唐在拾遗中提出了一个筛选，来区分用得失成败看问题的人和用是非对错看问题的人。把形成这不同看法的人，并将此与教育问题联系起来。</p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ca6MYfnE4ihQ6Z0NeUyk3Q">🔗书院拾遗第 164 期</a></p>
+<p>确实，人在漫长的人生历程中，是无可避免地会受到潜移默化的影响的。在一些看法和影响下，人的面貌得以塑造。</p>
+<p>之所以这个筛选器设置得巧妙，是因为那些似乎公认的真理，是没有根基的。</p>
+<p>也正是问题中的那种思维，让人不知不觉中把功效主义放在的第一位，更加可悲的是贯彻到日常生活中。</p>
+<p>似乎不如别人就是没有人权的。</p>
+<p>仿佛与人交往都是要先算计利益得失的。</p>
+<p>这种心态不仅会影响人看待世界，更重要的是会影响人与自己的相处。</p>
+<p>康德的绝对义务论，难就难在我们活着一个功效主义的现实世界，即便认可康德的观点，也需要找到一种方法去践行。</p>
+<hr>
+<p>了解到欧盟中国商会发布的《欧盟企业在中国建议书2024—2025》，里面提到一些内容，刚好跟目前在读的书籍有所呼应。</p>
+<p>外企当下在中国的忧虑，与建国后私营企业面临的境况如出一辙。或者说，更本源的内核是一致的，都是资本主义形态如何在社会主义国家生存。</p>
+<p>高度政治化的营商环境，以及不平等的待遇。在一个社会主义国家，可以从各种方面遏制一个企业的发展，比如当年的做法，切断上下游的关联，使得企业无法在上游正常采购，无法在下游正常销售，这也跟美国对待华为的做法一致。</p>
+<p>在一个意识形态冲突剧烈的世界，市场经济是高度理想化的，随处可见的非市场因素，随时都能打破岌岌可危的市场环境。</p>
+<p>总之，生活总得继续，投资总得进行，原则就是在不确定的世界中，去寻找更确定的东西。</p>
+<p>就如李录所说的：“不管是什么样的环境，总有公司会活下去，总有人能活的很好。我们只需要去投资这些有能力应对极端不确定性的公司就好。”</p>
+<p>用常识看待问题。</p>
+<hr>
+<p>李录与格林沃尔德在2021年的谈话，有些内容值得提取出来。</p>
+<p>从对话中可以感觉出，海外的投资者对于中国官方披露的数据保持非常审慎的看法，需要经过考证才会信任，而那些无法验证的数据就没有价值。</p>
+<p>格林沃尔德提到一个现象，「而发达国家都是服务型的经济为主体，而非商品型经济为主体。从这点看，所以中国在服务型经济上做的并不好。」</p>
+<p>中国以制造业为主体，而制造业是容易产能过剩的。一旦内部对于商品的需求不足，外部出口乏力，那么对于制造业的冲击也是很大的，就像现在的局面。</p>
+<p>格林沃尔德提到，「那么想在中国投资银行业，投资者是否要成为中国监管系统的专才？」李录对此表示肯定。而这是很多投资人欠缺的能力，就是站在政府的视角看问题。投资人往往具备企业家视角，但人由于经历不足，往往难以转换视角，就好比打工人难以与管理层感同身受。而这一点也可以看出老唐的厉害之处。</p>
+<p>李录提到一个关键的视角问题，「其实我学习到的有一点很关键，而这一点不是显而易见的，那就是中国政府在经济当中所扮演的角色。如果你是一个在美国或者其他发达国家的成功投资人，你会对于政府的角色和其他市场参与者的角色有一个预先的设想。而当我们真正深入中国市场观察研究，这些设想就会遇到一系列挑战，你会不断的获得与你以前经验认知所不一样的观点和判断。究其原因，起码部分是因为中国和美国或者其他西方国家政府所运行的规则的不同。这是投资中国的核心要素之一，这真的需要深层次的认知，以及系统化的对比来消除偏见。」</p>
+<p>这不仅仅对于外资来说有效，对于我们这些本地的投资者也是有效的。虽然我们生活在这片土地上，但是商业分析和经济原理的学习却是源自西方世界构筑的，遇到中国的国情下就很容碰壁，感到失望。李录能够直面这一点，但同时他也明白，即便中国经济运行的框架不同，但最终也是要符合经济规律的。「民主政治只是这个现象的一个结果，而非它的原因。」</p>
+<h3 id="美食烹饪"><a href="#美食烹饪" class="headerlink" title="美食烹饪"></a>美食烹饪</h3><p>这个月带来的是南瓜腊肉煲仔饭，食材其实可以随意搭配，营养合理就好。</p>
+<p><img src="https://image.meditations.top/pic/202410041103789.webp" alt="南瓜腊肉煲仔饭"></p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>标签：</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%97%A5%E5%B8%B8%E5%9B%9E%E9%A1%BE/"># 日常回顾</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">后退</a>
+                <span>· </span>
+                <a href="/">首页</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2024/09/01/article/%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF%202024%20%E5%B9%B4%208%20%E6%9C%88/">日积月累 2024 年 8 月</a>
+            
+        </section>
+
+
+    </article>
+
+    
+    <div class="flex items-center justify-center py-12 lg:py-16">
+        <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
+          <!-- 
+<script src="https://cdn.staticfile.net/twikoo/1.6.27/twikoo.all.min.js"></script>
+ -->
+
+<script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
+
+
+  <div  id="tcomment"></div>
+
+  <script>
+  twikoo.init({
+    envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
+    el: '#tcomment', 
+  })
+  </script>
+        </div>      
+    </div>    
+
+</div>
+
+            </div>
+            <footer id="footer" class="footer footer-center">
+    <div class="copyright">
+        <span>
+            <a href="/atom.xml" target="_blank">
+                <svg class="inline" style="width: 0.8em;height: 0.8em;vertical-align: baseline;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3310"><path d="M832.512 63.488q26.624 0 49.664 10.24t40.448 27.648 27.648 40.448 10.24 49.664l0 704.512q0 26.624-10.24 49.664t-27.648 40.448-40.448 27.648-49.664 10.24l-704.512 0q-26.624 0-49.664-10.24t-40.448-27.648-27.648-40.448-10.24-49.664l0-704.512q0-26.624 10.24-49.664t27.648-40.448 40.448-27.648 49.664-10.24l704.512 0zM188.416 923.648q19.456 0 36.864-7.168t30.208-19.968 19.968-30.208 7.168-36.864-7.168-36.864-19.968-30.208-30.208-19.968-36.864-7.168q-20.48 0-37.376 7.168t-30.208 19.968-20.48 30.208-7.168 36.864 7.168 36.864 20.48 30.208 30.208 19.968 37.376 7.168zM446.464 897.024l36.864 0q15.36 0 30.208 0.512t31.232 0.512 36.864-1.024q0-93.184-35.84-175.616t-97.28-143.872-143.872-96.768-175.616-35.328q-1.024 24.576-1.024 39.936l0 28.672q0 14.336 0.512 29.184t0.512 37.376q65.536 0 123.392 24.576t100.864 67.584 68.096 100.864 25.088 123.392zM707.584 894.976q36.864 0 49.152 0.512t18.432 1.536 15.872 1.024 41.472-2.048q0-145.408-55.296-272.896t-150.528-222.72-223.232-150.528-273.408-55.296q-1.024 25.6-1.024 36.864l0 16.384q0 4.096 0.512 5.632t0.512 7.168 0.512 18.432 0.512 40.448q119.808 0 224.768 45.056t183.296 123.392 123.392 183.296 45.056 223.744z" p-id="3311"></path></svg>
+            RSS</a> © 陆思沉 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a>
+        </span>
+    </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
