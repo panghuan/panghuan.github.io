@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="陆思沉">
+
+
+
+
+
+<title>日积月累 2026 年 1 月 | Meditations</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="https://jsd.cdn.zzko.cn/npm/theme-change@2.0.2/index.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "kjnowbcx0y");
+</script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Meditations" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+  <div class="drawer max-w-screen-2xl w-10/12 mx-auto">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full navbar">
+        <div class="flex-none md:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </label>
+        </div>
+        <div class="flex-1 px-2 mx-2">
+          <a href="/" class="font-bold">Meditations</a>
+        </div>
+        <div class="flex-none hidden md:block">
+          <ul class="menu menu-horizontal">
+            
+            <li><a class="" href="/">首页</a></li>
+            
+            <li><a class="" href="/article">文集</a></li>
+            
+            <li><a class="" href="/gamephoto">影集</a></li>
+            
+            <li><a class="" href="/cookbook">菜品</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <label class="cursor-pointer grid place-items-center">
+            <input type="checkbox" value="synthwave" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" />
+            <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-side">
+      <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class="menu p-4 w-40 min-h-full bg-base-200 items-center">
+        <!-- Sidebar content here -->
+        
+        <li><a class="" href="/">首页</a></li>
+        
+        <li><a class="" href="/article">文集</a></li>
+        
+        <li><a class="" href="/gamephoto">影集</a></li>
+        
+        <li><a class="" href="/cookbook">菜品</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</header>
+
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">展开内容</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">去到底部</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? '展开内容' : '折叠内容';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap prose leading-8">
+        <header class="post-header">
+            <h1 class="post-title">日积月累 2026 年 1 月</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        日期： 2026-02-04&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    分类：
+                            
+                                <a href="/categories/%E6%96%87%E9%9B%86/">文集</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>这里是对每月各事项进度所做的一个回顾，记录在阅读、生活等方面的思考和收获。这是写给自己的，在未来的某一天回顾，这些时光如同雁过留痕，能看到些许印记。</p>
+</blockquote>
+<p>新的一年一开始就忙忙碌碌的。</p>
+<p>首先去了云南一趟，在芒市、腾冲、昆明几个地方走走看看。</p>
+<p>一年初始就看了不少不一样的风情，虽说云南的景色是蛮好的，本人也一直更喜欢看自然景观而不是人文景点，但这趟经历，反而是旅途中遇见的人，随意间攀谈的言语，更让人触动和难忘。</p>
+<p>生活状态已经发生或者即将发生着改变，需要去调整和适应。</p>
+<p>好在心态没有之前急躁，只要敢于放弃，就没有什么大不了的。</p>
+<p>今年进度图的各个项目也还来不及做出调整，且行且看吧。本来记录就不是最重要的，而是实实在在的体验。记录是为了促进和总结，但不可本末倒置。</p>
+<p>争取今年能够产出更有价值的洞见，并得到落地。</p>
+<p>争取能够体验更多的好作品。</p>
+<p><img src="https://image.meditations.top/pic/20260204113030459.webp" alt="2026-1"></p>
+<h3 id="书籍阅读"><a href="#书籍阅读" class="headerlink" title="书籍阅读"></a>书籍阅读</h3><p><img src="https://image.meditations.top/pic/20260204113215977.webp" alt="我看见的世界"></p>
+<p>想更多的阅读一些跟 AI 相关的作品。</p>
+<p>不再是基于对 AI 技术的理解，而是看看其对这个世界和社会的改变，尽可能地去思考人类将走向何方。</p>
+<p>作者作为一名少数族裔移民，克服诸多困难，取得不俗的成绩，是时代和文化的成功，也是人文精神的胜利。</p>
+<p>很多事情，是可以超越种族的。萨贝拉一家对作者而言，就是文明的最好诠释。</p>
+<p>这部作品科学素养与人文情怀融汇贯通，个人进取与行业发展相互交织，内容翔实，情感真挚，行文如行云流水，读之如身临其境。</p>
+<blockquote>
+<p>事实上，我想得越多，就越担心像“家”一样舒适的地方在这种时候可能会过于安逸。搬到一个新地方之所以吸引我，正是因为那里不舒适。它会让我感到不确定，甚至可能有些冒险，而我就需要这种感觉。</p>
+<p>——《我看见的世界》</p>
+</blockquote>
+<p>人不能一直待在舒适圈里，这是生物的机理决定的。</p>
+<blockquote>
+<p>我对这个国家最深刻的理解不是来自新闻，也不是来自某个论战家的专栏文章，甚至不是来自教科书，而是源于有幸结识萨贝拉一家。他们是我在这片土地上最珍视的人道主义典范，他们闪耀着人性的光辉，在我看来，这才是真正的美国精神。</p>
+<p>——《我看见的世界》</p>
+</blockquote>
+<p>生而为人，很多东西都是共通的。语言和外貌，并非不可克服的阻碍。美国让全世界的移民心生向往，这个国家上的人民一定是做对了什么。</p>
+<h3 id="游戏往事"><a href="#游戏往事" class="headerlink" title="游戏往事"></a>游戏往事</h3><p>玩完了《战神：诸神黄昏》，不愧为三大动作游戏之一，可以玩出花来。</p>
+<p><img src="https://image.meditations.top/pic/20260204151625842.webp" alt="God of War Ragnarök_20260126202806"></p>
+<p><img src="https://image.meditations.top/pic/20260204151625851.webp" alt="God of War Ragnarök_20260126190423"></p>
+<p><img src="https://image.meditations.top/pic/20260204151625858.webp" alt="God of War Ragnarök_20260124224340"></p>
+<p><img src="https://image.meditations.top/pic/20260204151625867.webp" alt="God of War Ragnarök_20260124201531"></p>
+<p><img src="https://image.meditations.top/pic/20260204151625871.webp" alt="God of War Ragnarök_20251226173943"></p>
+<h3 id="美食烹饪"><a href="#美食烹饪" class="headerlink" title="美食烹饪"></a>美食烹饪</h3><p><img src="https://image.meditations.top/pic/20260204113748158.webp" alt="芒市晚餐"></p>
+<p><img src="https://image.meditations.top/pic/20260204113934525.webp" alt="旅途美食合集"></p>
+<h3 id="浮光掠影"><a href="#浮光掠影" class="headerlink" title="浮光掠影"></a>浮光掠影</h3><p><img src="https://image.meditations.top/pic/20260204114113037.webp" alt="在芒市"></p>
+<p><img src="https://image.meditations.top/pic/20260204142810593.webp" alt="一些植物"></p>
+<p><img src="https://image.meditations.top/pic/20260204142850619.webp" alt="在腾冲"></p>
+<p><img src="https://image.meditations.top/pic/20260204142923578.webp" alt="在昆明"></p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>标签：</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%97%A5%E5%B8%B8%E5%9B%9E%E9%A1%BE/"># 日常回顾</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">后退</a>
+                <span>· </span>
+                <a href="/">首页</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2025/12/31/article/%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF%202025%20%E5%B9%B4%2012%20%E6%9C%88/">日积月累 2025 年 12 月</a>
+            
+        </section>
+
+
+    </article>
+
+    
+    <div class="flex items-center justify-center py-12 lg:py-16">
+        <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
+          <!-- 
+<script src="https://cdn.staticfile.net/twikoo/1.6.27/twikoo.all.min.js"></script>
+ -->
+
+<script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
+
+
+  <div  id="tcomment"></div>
+
+  <script>
+  twikoo.init({
+    envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
+    el: '#tcomment', 
+  })
+  </script>
+        </div>      
+    </div>    
+
+</div>
+
+            </div>
+            <footer id="footer" class="footer footer-center">
+    <div class="copyright">
+        <span>
+            <a href="/atom.xml" target="_blank">
+                <svg class="inline" style="width: 0.8em;height: 0.8em;vertical-align: baseline;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3310"><path d="M832.512 63.488q26.624 0 49.664 10.24t40.448 27.648 27.648 40.448 10.24 49.664l0 704.512q0 26.624-10.24 49.664t-27.648 40.448-40.448 27.648-49.664 10.24l-704.512 0q-26.624 0-49.664-10.24t-40.448-27.648-27.648-40.448-10.24-49.664l0-704.512q0-26.624 10.24-49.664t27.648-40.448 40.448-27.648 49.664-10.24l704.512 0zM188.416 923.648q19.456 0 36.864-7.168t30.208-19.968 19.968-30.208 7.168-36.864-7.168-36.864-19.968-30.208-30.208-19.968-36.864-7.168q-20.48 0-37.376 7.168t-30.208 19.968-20.48 30.208-7.168 36.864 7.168 36.864 20.48 30.208 30.208 19.968 37.376 7.168zM446.464 897.024l36.864 0q15.36 0 30.208 0.512t31.232 0.512 36.864-1.024q0-93.184-35.84-175.616t-97.28-143.872-143.872-96.768-175.616-35.328q-1.024 24.576-1.024 39.936l0 28.672q0 14.336 0.512 29.184t0.512 37.376q65.536 0 123.392 24.576t100.864 67.584 68.096 100.864 25.088 123.392zM707.584 894.976q36.864 0 49.152 0.512t18.432 1.536 15.872 1.024 41.472-2.048q0-145.408-55.296-272.896t-150.528-222.72-223.232-150.528-273.408-55.296q-1.024 25.6-1.024 36.864l0 16.384q0 4.096 0.512 5.632t0.512 7.168 0.512 18.432 0.512 40.448q119.808 0 224.768 45.056t183.296 123.392 123.392 183.296 45.056 223.744z" p-id="3311"></path></svg>
+            RSS</a> © 陆思沉 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a>
+        </span>
+    </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
