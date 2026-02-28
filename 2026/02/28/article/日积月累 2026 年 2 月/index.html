@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="陆思沉">
+
+
+
+
+
+<title>日积月累 2026 年 2 月 | Meditations</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="https://jsd.cdn.zzko.cn/npm/theme-change@2.0.2/index.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "kjnowbcx0y");
+</script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Meditations" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+  <div class="drawer max-w-screen-2xl w-10/12 mx-auto">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full navbar">
+        <div class="flex-none md:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </label>
+        </div>
+        <div class="flex-1 px-2 mx-2">
+          <a href="/" class="font-bold">Meditations</a>
+        </div>
+        <div class="flex-none hidden md:block">
+          <ul class="menu menu-horizontal">
+            
+            <li><a class="" href="/">首页</a></li>
+            
+            <li><a class="" href="/article">文集</a></li>
+            
+            <li><a class="" href="/gamephoto">影集</a></li>
+            
+            <li><a class="" href="/cookbook">菜品</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <label class="cursor-pointer grid place-items-center">
+            <input type="checkbox" value="synthwave" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" />
+            <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-side">
+      <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class="menu p-4 w-40 min-h-full bg-base-200 items-center">
+        <!-- Sidebar content here -->
+        
+        <li><a class="" href="/">首页</a></li>
+        
+        <li><a class="" href="/article">文集</a></li>
+        
+        <li><a class="" href="/gamephoto">影集</a></li>
+        
+        <li><a class="" href="/cookbook">菜品</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</header>
+
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">展开内容</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">去到底部</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? '展开内容' : '折叠内容';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap prose leading-8">
+        <header class="post-header">
+            <h1 class="post-title">日积月累 2026 年 2 月</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        日期： 2026-02-28&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    分类：
+                            
+                                <a href="/categories/%E6%96%87%E9%9B%86/">文集</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>这里是对每月各事项进度所做的一个回顾，记录在阅读、生活等方面的思考和收获。这是写给自己的，在未来的某一天回顾，这些时光如同雁过留痕，能看到些许印记。</p>
+</blockquote>
+<p>本命年终于结束了。</p>
+<p>都说本命年多灾多难，但其实当一切过去之后，回头看发现其实这段人生也没那么沉重。</p>
+<p>过年回家待了一阵，低线城市家乡的变化，其实是非常缓慢的，很多地段感觉跟许多年前都没什么变化，建好空置的楼房依旧还是空荡荡的。大城市那种日新月异的建设速度，本身就是罕见的。去看看西方已经步入成熟的城市化国家，生活的节奏变化其实也是很慢的。</p>
+<p>改革开放几十年下来，或许只是特殊历史阶段的一段窗口期。只不过寻常视角，做不到如此宏大地观察。</p>
+<p>只不过纵然如此，还是需要学会拥抱变化。在 AI 的时代，寻常的不再那么寻常。</p>
+<p><img src="https://image.meditations.top/pic/20260228094911388.webp" alt="2026-2"></p>
+<h3 id="书籍阅读"><a href="#书籍阅读" class="headerlink" title="书籍阅读"></a>书籍阅读</h3><p><img src="https://image.meditations.top/pic/20260228094947237.webp" alt="对工作说不"></p>
+<p>之前就有过很多关于工作伦理的反思，这当然也是跟自身的工作经历有关。</p>
+<p>这本书也如此，有很多关于批判性看待工作的想法，一些尖锐的视角，当然作者还做了大量的采访。那些愿意把自身经历分享出来的人的经历，都是很具有启发性的。</p>
+<p>在读的过程中，难免也会受到自身主观思维的影响，作者写下的很多内容，在我看来过于想当然乃至不切实际，或者说，视角太小，只局限于自己的利益和感受，当然作为个体这无可厚非吧。</p>
+<p>但正如作者所说，我们需要的是大胆的、具备批判性的思考。的确，很多大问题是个体所无能为力的，给不出各方面都完美的方案。这就是真实的世界，现实往往就是如此。即便如此，批判性的启发式的思考，也是有价值的。虽不能至，心向往之，本身就会促进人们去解决和改善。</p>
+<p>我在豆瓣写到：「虽然不能完全赞同作者的观点，但书中的思想极具启发性和批判性。生活中看待问题，往往需要捅破那层习以为常的窗户纸，就像成年人意识到圣诞老人并不存在。」</p>
+<blockquote>
+<p>这些针对工作的批判强调一个以工作为中心的社会带来的巨大损失：人们本应用于参与政治活动、沉思、欢聚和庆祝，以及自发享受的时间，纷纷被资本主义对商业生产和消费的狭隘关注所取代。</p>
+<p>——《对工作说不》</p>
+</blockquote>
+<p>关于对工作的反思，需要想象力，或者说叛逆。当然更好的角度是，从第一性原理进行思考。</p>
+<blockquote>
+<p>时间政治的功能之一，正是按照公平正义而非经济理性的原则，来分配节省下来的工作时间。这些时间是整个社会的共同成果，我们的政治任务是按照每个人都能从中受益的方式，在全社会范围内对其进行重新分配。</p>
+<p>——《对工作说不》</p>
+</blockquote>
+<p>文中有很多突破现实的想法。怎样分配才是公平正义，这个问题也将充满争议。<br>三个臭皮匠，未必赛过诸葛亮。<br>减少一个高级工程师或研究员的时间，通过十个普通从业者未必能够弥补其产出。<br>多大程度上能够接受，社会总体上产出减少，但是更加雨露均沾？<br>更深刻的思考，这种理想化的政策，是可以人为规划出来的吗？</p>
+<blockquote>
+<p>这要求我们彻底摒弃用经济增长来衡量国家繁荣的过时思维，接受人类进步和幸福的另一种愿景——它的基础在于健康、自由时间和实现自身潜能的权利等非物质财富。</p>
+<p>——《对工作说不》</p>
+</blockquote>
+<p>这是很理想以人为本的倡议。</p>
+<blockquote>
+<p>当就业力的发展成为实际的必需品并且占据人的大部分心思时，我们就会越来越投入时间去做需要做的事情，而不是进行那些本身就具备价值的活动，也就是能发展我们的个人能力，充实我们的友谊关系，或者仅仅是我们喜欢做的事情。仅仅用于满足每个人所定义的真、善、美的标准的自主活动的时间越来越少。</p>
+<p>——《对工作说不》</p>
+</blockquote>
+<p>这是一个不起眼的隐形的但重大的影响。</p>
+<blockquote>
+<p>就业力所带来的压力正在将马克斯·霍克海默对发达资本主义社会“丧失内在性”的哀叹变为现实：在这些社会中，“想象力的翅膀被剪掉得太快”，因为个人越来越多地被迫采取一种更实际、更功利的方式来看待世界和他人(Horkheimer, 1974: 25)。这种内在性的丧失的一个副作用是，我们的社会可能正在失去判定一项活动即使无法提高就业力、满足经济需求，也有价值和意义的评判标准。高兹提出了这样一个问题：“什么时候我才是真正的自己，也就是说，我不是外界力量和影响的工具或产物，而是我的行为、思想、感情和价值观的创造者？”(Gorz, 1986)在一个工作之外的生活往往仅是工作的延伸——自由时间被用于恢复体力、消费麻醉和休闲享乐，或有意识地培养自己的就业力——的社会里，我认为这个问题已经变得难以回答，而这令人担忧。</p>
+<p>——《对工作说不》</p>
+</blockquote>
+<p>在这种情景下，人丧失了独立性，越来越被迫卷入社会生产的洪流中。</p>
+<blockquote>
+<p>正如凯西·威克斯所言：<br>生产主义的伦理假设是生产力在定义和完善我们，当人类的言辞、智力、思维和创造的能力不导向生产性目标时，它们就被贬低成单纯的闲聊、无用的好奇心、漂浮不定的思想和过分空闲的手，它们的非工具性被视为人类品质的可耻败坏。甚至连快乐也被描述为不那么有价值的——当它们被判定为不务正业时。</p>
+<p>——《对工作说不》</p>
+</blockquote>
+<p>很多时候，我们都下意识地通过一种叫做“一个人有没有用”的视角来判断其能力高低价值几何。诚然，我们都生活在一个需要物质来支撑生活的世界，但这种观察视角，很容易不自觉把人工具化之后来评判三六九等。那么，请想想当自己被如此评判的时候呢？虚荣和挫败就会如影随形。</p>
+<hr>
+<p><img src="https://image.meditations.top/pic/20260228104216382.webp" alt="金钱的艺术"></p>
+<p>摩根·豪泽尔式的典型的畅销书写法。</p>
+<p>也许，这种文章特别适合美国的国情吧。但在我看来，文章欠缺体系性，论点非常分散，类似于专栏的文集。</p>
+<p>当然，对于作者的观点，基本上就是赞同的。</p>
+<blockquote>
+<p>你可以试试：写下你希望自己讣告中会出现的内容，然后倒过来想——你该怎样活，才能配得上那样的评价。这是规划人生目标、明确真正重要之事最清晰、最简单的方法。</p>
+<p>——《金钱的艺术》</p>
+</blockquote>
+<p>一个挣扎在自我道路上的奋斗者，即以自己想要的方式度过一生。</p>
+<blockquote>
+<p>有时候，人们渴望炫耀物质，是因为那是他们获得尊重和钦佩的最后手段，甚至是唯一途径。如果你觉得自己无法通过智慧、幽默、共情或爱去赢得他人的尊敬，你就可能转向唯一剩下，但也是最不可靠的方式——用“拥有的东西”去博眼球。</p>
+<p>——《金钱的艺术》</p>
+</blockquote>
+<p>一个人拥有的，远不止物质层面的。</p>
+<blockquote>
+<p>美好生活的很大一部分，源于那些未曾发生的事。未曾发生的争吵，未曾染上的疾病，未曾纵容的欲望，未经承受的高消费生活，未曾犯下的错误，以及未曾有的遗憾。</p>
+<p>——《金钱的艺术》</p>
+</blockquote>
+<p>未然历史可以指导人生，但难就难在，我们很难发现。</p>
+<hr>
+<p><img src="https://image.meditations.top/pic/20260228111231981.webp" alt="动态效率"></p>
+<p>安踏集团相关人士写的一本书。</p>
+<p>作者以“动态效率”这个名字为框架，把商业故事里那些经典的看法，再次梳理了一遍。</p>
+<p>最大的收获可能是，知道安踏的人具备这种视角和认知，对其在战略上会觉得还是比较安心的。</p>
+<p>商业案例的分析，往往存在解释归因不充分的现象，所以正反面批判性的看看就好。</p>
+<p>这本书最核心的看法应该如下：</p>
+<blockquote>
+<p>在动态效率理念里，企业如果能够根据目标用户（群）定位，在保持用户（群）体验最佳的同时，实现企业成本和经营效率的最优化，使用户（群）需求在约束条件下得以最大化满足，就具备了持续增长的源泉。</p>
+<p>——《动态效率》</p>
+</blockquote>
+<h3 id="思考笔记"><a href="#思考笔记" class="headerlink" title="思考笔记"></a>思考笔记</h3><blockquote>
+<p>很多时候你要的不仅仅是一个 outcome，你要的是讨论这个问题的过程，你想看看不同的人、不同的思维方式是怎么想的，然后你再去选择怎么做。这会比仅仅给你一个 outcome 或流程来说，更有助于你去理解什么是智慧，而不是什么是知识。这也是哲学里一个恒久的命题，<strong>你仅仅有知识不足以达成你的幸福。</strong></p>
+<p>——张笑宇</p>
+</blockquote>
+<p>在 AI 时代，会有很多突破式的认知和哲思出来。在一个剧烈变化和动荡的环境中，生物才可能迅速进化。在黑洞周围，稳定压倒了一切，是不可能存在生命的。</p>
+<hr>
+<blockquote>
+<p>这就是悖论所在：AI 降低了「生产」的成本，却指数级增加了「协调、审查和决策」的成本。而这些成本，全部由人类买单。</p>
+<p>——公众号 APPSO</p>
+</blockquote>
+<p>几乎所有AI的问题，都是因为人本身的弱小，人不能与AI完全协同。</p>
+<p>认知能力就好比一个圆圈，随着 AI 的介入，圆圈扩大。另一面看，未知的边界也扩大了。</p>
+<p>即便在 AI 的帮助下，能够撑起更大的周长，但大脑的负荷其实也在提升。</p>
+<p>AI 的算力足，进化快，但人类生物层面的大脑是进化很慢的，进化的速度远远追不上与 AI 协同的需求。</p>
+<hr>
+<blockquote>
+<p>过去我们常说，工业革命解放了体力，信息革命解放了距离与信息获取的限制，如今AI又在变革人们的脑力。</p>
+<p>当我们的体力、脑力一定程度被替代后，或许这是一个让人重新回归为人的契机，大家会重新思考生命的意义。</p>
+<p>——王宁</p>
+</blockquote>
+<p>当我执的那部分消失以后，或许我们才能更多地思考存在的价值，生而为人要如何生活。</p>
+<p>所以说，等 AI 的喧嚣过去后，才能更加理解泡泡玛特带给人本身情绪那部分的价值。<br>不是所有人都愿意成为 AI 包围下的缸中之脑。</p>
+<h3 id="游戏往事"><a href="#游戏往事" class="headerlink" title="游戏往事"></a>游戏往事</h3><p>《崩坏：星穹铁道》在匹诺康尼篇的内容中，很多地方都透露出存在主义的哲思。个体在面对一些巨大的问题时，往往是无解无力的。但即便如此，我们如何看待这些问题本身，某种程度上也是我们找到答案的过程。</p>
+<p><img src="https://image.meditations.top/pic/20260228112840412.webp" alt="星穹铁道 3.8"></p>
+<h3 id="美食烹饪"><a href="#美食烹饪" class="headerlink" title="美食烹饪"></a>美食烹饪</h3><p><img src="https://image.meditations.top/pic/20260228141142357.webp" alt="一些菜式"></p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>标签：</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%97%A5%E5%B8%B8%E5%9B%9E%E9%A1%BE/"># 日常回顾</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">后退</a>
+                <span>· </span>
+                <a href="/">首页</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2026/02/04/article/%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF%202026%20%E5%B9%B4%201%20%E6%9C%88/">日积月累 2026 年 1 月</a>
+            
+        </section>
+
+
+    </article>
+
+    
+    <div class="flex items-center justify-center py-12 lg:py-16">
+        <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
+          <!-- 
+<script src="https://cdn.staticfile.net/twikoo/1.6.27/twikoo.all.min.js"></script>
+ -->
+
+<script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
+
+
+  <div  id="tcomment"></div>
+
+  <script>
+  twikoo.init({
+    envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
+    el: '#tcomment', 
+  })
+  </script>
+        </div>      
+    </div>    
+
+</div>
+
+            </div>
+            <footer id="footer" class="footer footer-center">
+    <div class="copyright">
+        <span>
+            <a href="/atom.xml" target="_blank">
+                <svg class="inline" style="width: 0.8em;height: 0.8em;vertical-align: baseline;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3310"><path d="M832.512 63.488q26.624 0 49.664 10.24t40.448 27.648 27.648 40.448 10.24 49.664l0 704.512q0 26.624-10.24 49.664t-27.648 40.448-40.448 27.648-49.664 10.24l-704.512 0q-26.624 0-49.664-10.24t-40.448-27.648-27.648-40.448-10.24-49.664l0-704.512q0-26.624 10.24-49.664t27.648-40.448 40.448-27.648 49.664-10.24l704.512 0zM188.416 923.648q19.456 0 36.864-7.168t30.208-19.968 19.968-30.208 7.168-36.864-7.168-36.864-19.968-30.208-30.208-19.968-36.864-7.168q-20.48 0-37.376 7.168t-30.208 19.968-20.48 30.208-7.168 36.864 7.168 36.864 20.48 30.208 30.208 19.968 37.376 7.168zM446.464 897.024l36.864 0q15.36 0 30.208 0.512t31.232 0.512 36.864-1.024q0-93.184-35.84-175.616t-97.28-143.872-143.872-96.768-175.616-35.328q-1.024 24.576-1.024 39.936l0 28.672q0 14.336 0.512 29.184t0.512 37.376q65.536 0 123.392 24.576t100.864 67.584 68.096 100.864 25.088 123.392zM707.584 894.976q36.864 0 49.152 0.512t18.432 1.536 15.872 1.024 41.472-2.048q0-145.408-55.296-272.896t-150.528-222.72-223.232-150.528-273.408-55.296q-1.024 25.6-1.024 36.864l0 16.384q0 4.096 0.512 5.632t0.512 7.168 0.512 18.432 0.512 40.448q119.808 0 224.768 45.056t183.296 123.392 123.392 183.296 45.056 223.744z" p-id="3311"></path></svg>
+            RSS</a> © 陆思沉 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a>
+        </span>
+    </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
