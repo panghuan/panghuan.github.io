@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="陆思沉">
+
+
+
+
+
+<title>日积月累 2026 年 5 月 | Meditations</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="https://jsd.cdn.zzko.cn/npm/theme-change@2.0.2/index.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "kjnowbcx0y");
+</script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Meditations" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+  <div class="drawer max-w-screen-2xl w-10/12 mx-auto">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full navbar">
+        <div class="flex-none md:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </label>
+        </div>
+        <div class="flex-1 px-2 mx-2">
+          <a href="/" class="font-bold">Meditations</a>
+        </div>
+        <div class="flex-none hidden md:block">
+          <ul class="menu menu-horizontal">
+            
+            <li><a class="" href="/">首页</a></li>
+            
+            <li><a class="" href="/article">文集</a></li>
+            
+            <li><a class="" href="/gamephoto">影集</a></li>
+            
+            <li><a class="" href="/cookbook">菜品</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <label class="cursor-pointer grid place-items-center">
+            <input type="checkbox" value="synthwave" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" />
+            <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-side">
+      <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class="menu p-4 w-40 min-h-full bg-base-200 items-center">
+        <!-- Sidebar content here -->
+        
+        <li><a class="" href="/">首页</a></li>
+        
+        <li><a class="" href="/article">文集</a></li>
+        
+        <li><a class="" href="/gamephoto">影集</a></li>
+        
+        <li><a class="" href="/cookbook">菜品</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</header>
+
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">展开内容</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">去到底部</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? '展开内容' : '折叠内容';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap prose leading-8">
+        <header class="post-header">
+            <h1 class="post-title">日积月累 2026 年 5 月</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        日期： 2026-06-03&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    分类：
+                            
+                                <a href="/categories/%E6%96%87%E9%9B%86/">文集</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>这里是对每月各事项进度所做的一个回顾，记录在阅读、生活等方面的思考和收获。这是写给自己的，在未来的某一天回顾，这些时光如同雁过留痕，能看到些许印记。</p>
+</blockquote>
+<p>这个月的总结晚了好几天，是因为手头有一些高质量的阅读内容，把自己拉入了难得的深入思考状态。所以这份月度回顾就一直磨磨蹭蹭的。</p>
+<p>如果沉下来过好每一天，很容易发现日子不知不觉间就过去了。其实这样也挺好的，说明活在了当下。</p>
+<p>这个月关注的主要叙事仍然离不开 AI 的影响。</p>
+<p>不仅仅因为这种剧烈的技术进化，容易挑动人们的神经。也是因为这发生的一切，对产业会产生实实在在的影响，对社会的冲击也迟早会席卷而来。</p>
+<p>我喜欢作为一个观察者，站在远处来看待这一切。</p>
+<p>月末的时候，也上手尝试了 workbuddy 这款工具。主要还是好久没有折腾了，时不时还是会这么来一下。目前 AI 工具以 chatbot 为核心，迅速跃升到以 agent 为核心，开始对生产力环节产生更大的影响。</p>
+<p>之前看到一款好看的为 AI 生成网页适配的设计 skill，于是就试着为自己的博客页面换一个风格。应该来说，生成效果还不错，主要是产出很快，当然需要打磨的地方也不少。更重要的是，我之前已经有了框架，也就是有了做好这件事的流程方法，这样 AI 就能较好地朝着目标落地。</p>
+<p>随着未来算力瓶颈的解决，以及实操方法的普及，我认为很多行业做事的方式方法都会出现很大的变化。</p>
+<p>how 的问题不会成为门槛，这只是一个效率和水平的问题。what 本身才是根本。</p>
+<p>把手弄脏才有意义。</p>
+<p><img src="https://image.meditations.top/pic/20260603173626680.webp" alt="2026-5"></p>
+<h3 id="书籍阅读"><a href="#书籍阅读" class="headerlink" title="书籍阅读"></a>书籍阅读</h3><p><img src="https://image.meditations.top/pic/20260603173649193.webp" alt="哈萨比斯：谷歌AI之脑"></p>
+<p>也算是阅读一本跟 AI 相关的书籍。</p>
+<p>这是一本传记，也不算是追热点，尽管我觉得现在出传记对主角来说还是太早了点。</p>
+<p>很早就听说过哈萨比斯，因为在 AlphaGo 打败李世乭的时候，就知道了 DeepMind。这是一支很了不起的团队。但直到读这本书之前，才知道哈萨比斯拿到了诺贝尔化学奖。</p>
+<p>这本书的阅读过程让我觉得时起时伏。作者在有些地方引用了大篇的相关人物言论，这当然是第一手的素材，但故事的连贯性和趣味性就不那么明显。</p>
+<p>但值得肯定的是，这些言论反映了参与者最本质的想法，基本还原了事件的发展与脉络，让人了解清楚了人工智能中一些细分领域，是怎么演化成今天世界所呈现出来的这个样子，以及今天的竞争格局是如何形成的。</p>
+<p>这或许就是读者能够获得的最大价值，当然也需要以其他参与者的视角来多方了解印证。</p>
+<p>时间会证明一切。</p>
+<blockquote>
+<p>如果聪明的人类能够理解彼此不那么规范的表达，那么智能机器也应该能够理解不精确、无结构的数据。它们应该能够从实例中总结出普遍规律，既具备演绎能力，也具备归纳能力。</p>
+<p>——《哈萨比斯：谷歌AI之脑》</p>
+</blockquote>
+<p>如果我们能搞明白人脑运行的模式，或者在很大程度上能够模拟，那么机器也能表现得像人一样。生理机制所表现出来的行为，如果能够搞明白机理，那么碳基生物就没什么特别的。</p>
+<blockquote>
+<p>哈萨比斯有理由相信围棋能更快被攻克。这一切始于《哥德尔、艾舍尔、巴赫》所揭示的核心思想：<br>人类大脑能做到的事情，计算机也应该能做到。<br>直觉或“系统一”思维听起来难以言喻、无法被编程实现，但自剑桥大学求学时期起，哈萨比斯相信，智能的所有表现形式归根结底都是在海量杂乱的信息中识别模式。直觉本质上是某种巧妙的算法——一种科学能够揭示的算法。</p>
+<p>——《哈萨比斯：谷歌AI之脑》</p>
+</blockquote>
+<p>何谓智能，如果表现得足够达到其定义，那么无外乎其主体是人还是机器。</p>
+<blockquote>
+<p>我们经历了那些谈判，逐渐成熟。事情并不是非黑即白，尤其是当你面对一项后果未知的技术时。所以你必须学会适应，从理想主义者转变为现实主义者，但仍然希望保持理想主义的内核。</p>
+<p>——《哈萨比斯：谷歌AI之脑》</p>
+</blockquote>
+<p>难能可贵。世界上只有一种英雄主义，就是认清生活的真相后依然热爱生活。对于理想主义者亦是如此。</p>
+<h3 id="思考笔记"><a href="#思考笔记" class="headerlink" title="思考笔记"></a>思考笔记</h3><blockquote>
+<p>在0∶5失利后，樊麾加入了DeepMind，甚至表示失败让他看到了人生的无限可能。“我发现这个世界比我想象的大得多，我真的很喜欢这种感觉。”他惊叹道。</p>
+<p>——《哈萨比斯：谷歌AI之脑》</p>
+</blockquote>
+<p>人生的画卷，确实是跟头脑对此的想象力有关。</p>
+<p>我们的生活，被日复一日的定义所局限着。</p>
+<p>如果秉持着光脚者的心态，在一无所有之后，反而能够看到更大的世界，获得更大的自由。</p>
+<p>人要看到认知之外的东西，往往要借助认知之外的助力。</p>
+<hr>
+<blockquote>
+<p>单纯堆时间是没有意义的。你必须进入系统性的刻意练习，接受反馈，修正错误，突破原有习惯，水平才可能持续提升。</p>
+<p>否则，一万小时也只是在重复自己的旧习惯——所谓：“低水平重复”。</p>
+<p>不论是围棋还是Dota，亦或者是写作、足球、武术，每个认真的玩家都需要选择：你是只图个快乐，还是追求技艺精进？</p>
+<p>——公众号 CxEric 的读书与投资笔记</p>
+</blockquote>
+<p>肯定也有很多人也在思考和权衡，作为一个非学院派出生的投资者，要如何做好这件事。</p>
+<p>像巴菲特那样远离机构保持自己的节奏和松弛感，与系统训练精进之间，那道界限在哪里？</p>
+<hr>
+<blockquote>
+<p>所以，这个问题说不清楚，人性理解上，我相信黄仁勋，在未来，哄睡师、上门做饭…各种 AI 做不到的新职业都会涌现，只要你对未来生活有向往，政府重税发给你的福利不够多，你就会想要掌握一门新技能来跟这个社会交换财富，只有这样，你才能喝上稀缺的茅台，不管 AI 怎么变，茅台就是 5 万吨产量，你想要美好生活，你就得努力，稀缺的东西是很多的，帅哥美女是稀缺的（当然，整容是可以填平一部分稀缺性的）、核心地段的好位置是稀缺的，5A 级的景区是稀缺的，AI 再怎么发达，也造不出一个九寨沟，你说是不是？</p>
+<p>——公众号 方伟看十年</p>
+</blockquote>
+<p>AI 改变的是稀缺性的布局。</p>
+<p>曾经某些智力劳动如程序员的稀缺性被取代了，这个社会就会产生新的需求痛点。所以只是通过供需关系改变资源财富的分配方式。</p>
+<p>有些东西天然就是稀缺的，AI 就很难影响。</p>
+<p>而 AI 可以达成的，那么人的努力同样没有价值。</p>
+<p>这导向了一个对人本主义不友好的结果，那就是把人之间不平等的部分放大了出来。</p>
+<p>有的人天生智商卓越，但这部分是能够被填平的。</p>
+<p>有的人天生貌美强健，那这部分仍然会存在优势，除非某一天对美貌的需求也被改变了。</p>
+<p>有的人的优势比如能言善辩（销售）、表演天然之类的，AI 的沟通能力也在极速提升，AI 影视作品也在重塑演艺行业，这些领域会受到重大的影响，但也有人类能力的一席之地。比如与活人沟通的需求，这种同类的共鸣还是 AI 无法替代的；比如看真人演出的需求，话剧等现场表演的需求也无法替代。</p>
+<h3 id="游戏往事"><a href="#游戏往事" class="headerlink" title="游戏往事"></a>游戏往事</h3><p>《女神异闻录 5》号称天下第一，确实是一款极具艺术特色的作品。先不论玩法，就看这几幅战斗结算画面，就很有风格。</p>
+<p><img src="https://image.meditations.top/pic/20260603212957508.webp" alt="女神异闻录5皇家版_20260508160631"></p>
+<p><img src="https://image.meditations.top/pic/20260603213114975.webp" alt="女神异闻录5皇家版_20260502183710"></p>
+<p><img src="https://image.meditations.top/pic/20260603213239074.webp" alt="女神异闻录5皇家版_20260508161811"></p>
+<p><img src="https://image.meditations.top/pic/20260603213239224.webp" alt="女神异闻录5皇家版_20260523171305"></p>
+<p><img src="https://image.meditations.top/pic/20260603213239233.webp" alt="女神异闻录5皇家版_20260524210456"></p>
+<h3 id="美食烹饪"><a href="#美食烹饪" class="headerlink" title="美食烹饪"></a>美食烹饪</h3><p><img src="https://image.meditations.top/pic/20260603173743930.webp" alt="一些菜"></p>
+<h3 id="浮光掠影"><a href="#浮光掠影" class="headerlink" title="浮光掠影"></a>浮光掠影</h3><p><img src="https://image.meditations.top/pic/20260603173914992.webp" alt="林海线"></p>
+<p><img src="https://image.meditations.top/pic/20260603173937243.webp" alt="美术馆"></p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>标签：</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%97%A5%E5%B8%B8%E5%9B%9E%E9%A1%BE/"># 日常回顾</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">后退</a>
+                <span>· </span>
+                <a href="/">首页</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2026/05/01/article/%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF%202026%20%E5%B9%B4%204%20%E6%9C%88/">日积月累 2026 年 4 月</a>
+            
+        </section>
+
+
+    </article>
+
+    
+    <div class="flex items-center justify-center py-12 lg:py-16">
+        <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
+          <!-- 
+<script src="https://cdn.staticfile.net/twikoo/1.6.27/twikoo.all.min.js"></script>
+ -->
+
+<script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
+
+
+  <div  id="tcomment"></div>
+
+  <script>
+  twikoo.init({
+    envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
+    el: '#tcomment', 
+  })
+  </script>
+        </div>      
+    </div>    
+
+</div>
+
+            </div>
+            <footer id="footer" class="footer footer-center">
+    <div class="copyright">
+        <span>
+            <a href="/atom.xml" target="_blank">
+                <svg class="inline" style="width: 0.8em;height: 0.8em;vertical-align: baseline;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3310"><path d="M832.512 63.488q26.624 0 49.664 10.24t40.448 27.648 27.648 40.448 10.24 49.664l0 704.512q0 26.624-10.24 49.664t-27.648 40.448-40.448 27.648-49.664 10.24l-704.512 0q-26.624 0-49.664-10.24t-40.448-27.648-27.648-40.448-10.24-49.664l0-704.512q0-26.624 10.24-49.664t27.648-40.448 40.448-27.648 49.664-10.24l704.512 0zM188.416 923.648q19.456 0 36.864-7.168t30.208-19.968 19.968-30.208 7.168-36.864-7.168-36.864-19.968-30.208-30.208-19.968-36.864-7.168q-20.48 0-37.376 7.168t-30.208 19.968-20.48 30.208-7.168 36.864 7.168 36.864 20.48 30.208 30.208 19.968 37.376 7.168zM446.464 897.024l36.864 0q15.36 0 30.208 0.512t31.232 0.512 36.864-1.024q0-93.184-35.84-175.616t-97.28-143.872-143.872-96.768-175.616-35.328q-1.024 24.576-1.024 39.936l0 28.672q0 14.336 0.512 29.184t0.512 37.376q65.536 0 123.392 24.576t100.864 67.584 68.096 100.864 25.088 123.392zM707.584 894.976q36.864 0 49.152 0.512t18.432 1.536 15.872 1.024 41.472-2.048q0-145.408-55.296-272.896t-150.528-222.72-223.232-150.528-273.408-55.296q-1.024 25.6-1.024 36.864l0 16.384q0 4.096 0.512 5.632t0.512 7.168 0.512 18.432 0.512 40.448q119.808 0 224.768 45.056t183.296 123.392 123.392 183.296 45.056 223.744z" p-id="3311"></path></svg>
+            RSS</a> © 陆思沉 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a>
+        </span>
+    </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
