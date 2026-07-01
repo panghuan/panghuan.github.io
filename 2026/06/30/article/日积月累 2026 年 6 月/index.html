@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="陆思沉">
+
+
+
+
+
+<title>日积月累 2026 年 6 月 | Meditations</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="https://jsd.cdn.zzko.cn/npm/theme-change@2.0.2/index.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "kjnowbcx0y");
+</script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Meditations" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+  <div class="drawer max-w-screen-2xl w-10/12 mx-auto">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full navbar">
+        <div class="flex-none md:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </label>
+        </div>
+        <div class="flex-1 px-2 mx-2">
+          <a href="/" class="font-bold">Meditations</a>
+        </div>
+        <div class="flex-none hidden md:block">
+          <ul class="menu menu-horizontal">
+            
+            <li><a class="" href="/">首页</a></li>
+            
+            <li><a class="" href="/article">文集</a></li>
+            
+            <li><a class="" href="/gamephoto">影集</a></li>
+            
+            <li><a class="" href="/cookbook">菜品</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <label class="cursor-pointer grid place-items-center">
+            <input type="checkbox" value="synthwave" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" />
+            <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-side">
+      <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class="menu p-4 w-40 min-h-full bg-base-200 items-center">
+        <!-- Sidebar content here -->
+        
+        <li><a class="" href="/">首页</a></li>
+        
+        <li><a class="" href="/article">文集</a></li>
+        
+        <li><a class="" href="/gamephoto">影集</a></li>
+        
+        <li><a class="" href="/cookbook">菜品</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</header>
+
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">展开内容</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">去到底部</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? '展开内容' : '折叠内容';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap prose leading-8">
+        <header class="post-header">
+            <h1 class="post-title">日积月累 2026 年 6 月</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        日期： 2026-06-30&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    分类：
+                            
+                                <a href="/categories/%E6%96%87%E9%9B%86/">文集</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>这里是对每月各事项进度所做的一个回顾，记录在阅读、生活等方面的思考和收获。这是写给自己的，在未来的某一天回顾，这些时光如同雁过留痕，能看到些许印记。</p>
+</blockquote>
+<p>半年时间呼啸而过。</p>
+<p>仔细想来，之所以觉得过得还挺快，主要还是大众的神经都被国内外剧烈的变化所牵引。人活在一个动荡的时代中，不知不觉就被推着前行。</p>
+<p>如果说关于上半年的记忆，最突出的两件事情无疑显而易见。</p>
+<p>在地缘政治层面，霍尔木兹海峡的冲突，进一步撕裂全球秩序。</p>
+<p>从年初高歌猛进的贵金属和有色金属，到石油、以及下游一切的石油衍生产品，无疑不受到剧烈的冲击。</p>
+<p>更为搞笑的事，事件的主角带着人们的关注度，反复横跳，TACO 的行为艺术更让这个世界显得魔幻。</p>
+<p>不管能源、海运等金融市场如何疯狂，都掩盖不了战争真实波及到的人们，那难以弥合的创伤。</p>
+<p>与此同时，与战争中底层民众更加遥远的叙事，是中美两国在 AI 这个领域里不断抓人眼球的新闻。</p>
+<p>在人们怀着巨大的 FOMO 心态下，AIGC 的浪潮席卷而来，涌向各行各业。</p>
+<p>一个月前的破圈产品，可能在一个月后就迅速冷却下来，甚至一周前行业领袖的表态，也会迎来反转。</p>
+<p>科技行业的资本市场同时迎来了狂欢，虹吸一切资源，传统行业朝夕之间仿佛将迎来衰败。</p>
+<p>这种故事，在一百多年前的铁路、电气等技术浪潮涌现的时候，都曾反复上演过，更不用说三十年前的互联网革命。</p>
+<p>身处其中，尽可能让自己保持平静。保持辩证的思考，想海绵一样去吸纳新的知识和见解，不疾不徐或许更适合普通人。</p>
+<p><img src="https://image.meditations.top/pic/20260630170341402.webp" alt="2026-6"></p>
+<h3 id="书籍阅读"><a href="#书籍阅读" class="headerlink" title="书籍阅读"></a>书籍阅读</h3><p><img src="https://image.meditations.top/pic/20260630170408604.webp" alt="你要如何衡量你的人生"></p>
+<p>读过这个作者之前的一本名著，《创新者的窘境》。</p>
+<p>对人生哲学类的书籍，其实不像更年轻时那么感冒。</p>
+<p>人的秉性，有时候是很难改变的。很多老话，其实听起来，都有一些道理。所谓“江山易改，本性难移”。</p>
+<p>所以吧，后来觉得，人只能去选择走一条适合自己道路。</p>
+<p>很多道理虽然对，但未必就是适合自己，所以接受就好。</p>
+<p>但人很多时候，会被一些习以为常的观点所笼罩住。如果一些见解，能够让人看到那些理所当然的事物，其实并非如此；或者是被推动者看到一些从未想过的东西，站在一个从未立足的视角，那就也很好。</p>
+<p>但能有多大的用处，终究是看各自的造化。</p>
+<blockquote>
+<p>我完全赞同克里斯坦森的一个观点：“对于生活的基本问题，并不存在所谓的特效药和快速解决的方法。”所以，思考的过程比思考的结论对我们的人生更有价值。。</p>
+<p>——《你要如何衡量你的人生》</p>
+</blockquote>
+<p>之所以过程更有价值，是因为我们需要形成一种可以不断重复的能力。授人以鱼，不如授人以渔。</p>
+<blockquote>
+<p>我就来谈谈第二个学派——通常被称作“二因论”或“动因论”——它刚好与激励论相反。它承认要得到想得到的需要付给人报酬，但物质激励不是真正的“动因”。人们做某件事真正的动因是：发自内心地想去做。这样，不论你身处顺境还是逆境，动因都将持续。</p>
+<p>——《你要如何衡量你的人生》</p>
+</blockquote>
+<p>人之所以具备主观能动性，正是有发自内心想去做的事，而不是听从安排任人差遣地活着。</p>
+<blockquote>
+<p>是的，我们可以为配偶做一切事情，但是，在我们寻找幸福的夫妻关系时，如果没有关注到对方最需要我们做的工作是什么，只会收获挫折感和困惑。因为我们的努力错位了——就像奶昔案例一样，我们只是把奶昔改进得多些巧克力味。这或许就是婚姻中最难做的一件事。即使夫妻两人都是从好意出发，彼此相爱，但还是会从根本上误解对方。我们每天的生活都是杂务缠身，相互之间的交流最后就变成关注对方正在做的事情了，我们是在自以为是地看待事情。</p>
+<p>——《你要如何衡量你的人生》</p>
+</blockquote>
+<p>懂得这个道理，和过好自己的人生，隔了很远很远。</p>
+<blockquote>
+<p>文化是基于处理问题的过程和做选择时的价值取向被一个组织不断重复使用，且被证明有效的基础上形成的，一个组织的文化是否健康，需要看其对下面问题的回答：当公司的员工需要选择如何去做一件事时，他们的选择是不是公司文化所要求的？收到的效果是否也符合公司文化的要求？如果这些因素没有得到满足，那么单单一个错误的决定或其后果就能轻易地使一个公司的文化走向歧途。</p>
+<p>——《你要如何衡量你的人生》</p>
+</blockquote>
+<p>一个关于企业文化非常好的描述。</p>
+<hr>
+<p><img src="https://image.meditations.top/pic/20260630172522907.webp" alt="走出洞穴"></p>
+<p>前几年陆陆续续看过一些经济学的书籍，也听说过不少经济学派阵营，不同研究方向的学者有时候还会打打嘴仗。但了解得一直不够系统，也讲不清楚不同学者主张的差别。</p>
+<p>这本书对我来说，最棒的一点，提供了一个脉络，看看经济学是怎么发展起来的，是如何枝繁叶茂的。并且把经济学诸多思想如何诞生的，跟当时的国家和社会发展结合起来看，遇到了什么问题，要解决什么问题，就能够更好地理解不同学派的主张和分歧。</p>
+<p>经济学重大的思想和发现，定然不是 100 这个数字可以圈定的。在未来，也肯定会出现符合那个时代的经济学思想。毕竟，在有限的条件下，做出尽可能更好的选择，这就是经济学的本质。而这个本质，并不会随着时代改变。</p>
+<blockquote>
+<p>门格尔的核心观点可以用一句话来概括：商品的价值不取决于生产成本或劳动量，而是取决于人们对它的需求。人们为什么购买某种商品？它为什么有价值？并不是因为它的生产成本或生产它所消耗的劳动量，而是因为人们需要它。商品的价值源于人们的主观需求和评价，这一简洁的论断是门格尔的开创性贡献。<br>商品的价值不依赖于生产成本或劳动量，而是源于人们的主观需求和评价，价值没有所谓的客观或绝对标准。这一观点被称为效用价值论，也叫主观价值论。</p>
+<p>——《走出洞穴》</p>
+</blockquote>
+<p>商品如何定价，其实是一个众说纷纭的难题，不同人站在不同的视角看问题，自然难以说服。有的人会觉得泡泡玛特的玩偶是纯智商税，有的人会觉得它极大了提升了自己的幸福感。有些需求，本身就是一件很主观的事。</p>
+<blockquote>
+<p>费雪认为，人真正需要的收入，不是货币收入，也不是消除通胀影响后的真实收入，甚至不是物质收入，而是享受收入。</p>
+<p>——《走出洞穴》</p>
+</blockquote>
+<p>这无疑是很具有智慧的洞见。收入的最终目的，是为了获取某种体验。对符合自己个性化的体验最大化，才是人生最优解。对于国家也是如此，GDP 不是最终目的，民众活得幸福才是。</p>
+<blockquote>
+<p>奈特在该论文中实际上已经明确提出了交易费用的概念。在《风险、不确定性与利润》的最后一章，他有一段非常精彩的论述：“假如世界上没有风险，没有不确定性，一切都是确定的、清楚明白的，那么我们就不需要任何组织。不仅企业不需要存在，政府也完全没有必要。”</p>
+<p>——《走出洞穴》</p>
+</blockquote>
+<p>正是因为存在风险、具备不确定性，才会有利润存在。如果一切皆已确定，那么就没有了努力和作为的空间。</p>
+<blockquote>
+<p>金融体系内在的不稳定性，本质上源于人们预期的不稳定性；而预期的不稳定性，则根植于人性的不稳定性。</p>
+<p>——《走出洞穴》</p>
+</blockquote>
+<p>追求完全可控的经济体系，可能只是一种徒劳。</p>
+<blockquote>
+<p>人类经济问题之发生乃是源于人类生存的两个基本事实：其一，人类必须拥有足以保证其生存的物质资料和精神资料；其二，能够供人类消费的物质资料和精神资料在任何时刻都是稀缺或不足的。前者被称为需求或欲望的无限性，后者被称为供给或资源的有限性。</p>
+<p>——《走出洞穴》</p>
+</blockquote>
+<p>很多年前，我也同样领悟到这个同样的想法。很有幸与作者共鸣。</p>
+<hr>
+<p><img src="https://image.meditations.top/pic/20260701145905268.webp" alt="英伟达之道"></p>
+<p>作为一个与显卡打交道的老玩家，属实没有想到英伟达能够像如今这么风光。</p>
+<p>读这本书，自然也少不了受到这个当红炸子鸡的影响。</p>
+<p>但自然，我也很想知道，一个游戏显卡公司，是如何走出创新者的窘境，摇身一变成为一家引领时代的 AI 芯片公司的。老黄作为一个执掌公司 30 多年的 CEO，究竟有什么过人之处。</p>
+<blockquote>
+<p>“那些期望值很高的人往往缺乏韧性。不幸的是，成功需要韧性，”他后来这样说，“伟大和聪明无关，而是来自品格。”在他看来，品格只有在乘风破浪和逆水行舟后才能塑造而成。对黄仁勋来说，在面对艰难甚至压倒性挑战时依然坚持奋斗，正是工作本身的意义。<br>这也是为什么每当有人向他寻求如何取得成功的建议时，他多年来给出的答案都是一样的：“我希望你们能经历足够多的痛苦与磨难。”</p>
+<p>——《英伟达之道》</p>
+</blockquote>
+<p>逆境才能看出一个人到底怎么样。我也越来越认同，性格中的那些因素，对一个人越来越重要。</p>
+<blockquote>
+<p>黄仁勋也希望与LSI公司好聚好散。1993年的前6周，他都在忙着将自己的项目移交给公司的其他负责人。</p>
+<p>——《英伟达之道》</p>
+</blockquote>
+<p>我觉得这是一个不起眼但重要的细节，反映了一个人对待工作的态度，这往往是事业成败的内在因素。</p>
+<blockquote>
+<p>它取得了许多成就：技术奇迹、成功的IPO，以及在大多数竞争对手只存活几年的行业中得以较长时间地存续。</p>
+<p>——《英伟达之道》</p>
+</blockquote>
+<p>我觉得这很重要，这是为未来奠定的坚实基础。<br>在一个竞争激烈的环境中，能够长期存活下来，必然会带来组织能力和内部文化的进化。这是一种看不见的内功，是需要背后在很多细节上做出大量调整和改进的，也是未来能够取得更大成功的关键。<br>无数的公司，就是死于这个过程中，虽然表面上看到的是各不相同的原因。</p>
+<blockquote>
+<p>有很多宣扬自立自强的专家和大师教导我们说，可以在赚更多钱的同时做更少的工作。黄仁勋则是这种观念的反面。他认为没有任何捷径可走。成功的最佳途径，就是选择更艰难的道路，而最好的老师就是逆境。</p>
+<p>——《英伟达之道》</p>
+</blockquote>
+<p>捷径，是一条绕远的路。</p>
+<h3 id="思考笔记"><a href="#思考笔记" class="headerlink" title="思考笔记"></a>思考笔记</h3><blockquote>
+<p>当一个社会用“贫富”划分人的等级时，它便摧毁了人性中最珍贵的东西：共情与希望。<br>——奥斯卡·王尔德，《社会主义制度下人的灵魂》</p>
+</blockquote>
+<p>这是我读经济学书籍里的一段引用。无论是通过这种标签把人们划分开来，放大彼此的差异和不同，就逐渐淡化了人与人之间共同的那部分东西。</p>
+<p>纵然人与人的确天生会有很多不同，但人性中最本源的一些感受，来自于生物本能的一些感受，是共通的。</p>
+<hr>
+<blockquote>
+<p>四重结构合起来看，<strong>团队的存在是为了承担风险、稳住注意力、积累信用、容纳价值场景。</strong> AI 能让一个超级个体的能力实现跃迁，但跃迁之后，这个人必须面对四件事：一个人承载不了所有风险，稳不住所有注意力，积累不出长期信用，也接不住更大的价值场景。</p>
+<p>——公众号 腾讯研究院</p>
+</blockquote>
+<p>在 AI 时代，个人的能力也有极限。人是有极限的，只要需要人来介入，那就有天花板。AI 本质上并不能消除天花板，只能抬升天花板。所以还是需要构建合适的协作机制，形成社群乃至社会。</p>
+<p>其实从微观经济学的入门理论就很容易想清楚，那就是从相对优势的视角来看问题。</p>
+<p>就算 AI 全面增强个体全方位的能力，在不同能力之间仍然存在比较优势。而人的精力和时间等资源是有限的，应该投入到更具有比较优势的环节。</p>
+<hr>
+<blockquote>
+<p>我的耐心不来自于我的意志力，我很早就知道意志力是不靠谱的，是被高估的，耐心的前提是需要你构建一个能让你有耐心的环境，这是一个系统工程。</p>
+<p>老巴在 1969 年解散了自己的合伙私募基金，然后重建了以伯克希尔为核心的长期资本平台。因为60 年代末美股大牛市，找不到足够多的低估值 “烟蒂股”，安全边际消失了，他不想一辈子被业绩排名、短期压力、投资人情绪绑架 —— 他要的是自由和耐心，而不是永远当 “基金经理”。</p>
+<p>他能用零成本 &#x2F; 低成本的浮存金去投资，他的钱是长钱，所以没有人会催促他，他也没有赎回压力。</p>
+<p>你看见的是他有耐心，我看见的是他为了让自己有耐心所构建的整个做长期决策的系统，而且他非常明白自己到底要什么，并且为了自己的人生目标，有勇气破釜沉舟，重头再来。</p>
+<p>—公众号 方伟看十年</p>
+</blockquote>
+<p>巴菲特这个做法被拿来反复解读，这一次的视角很有意思。</p>
+<p>一个人活着需要明白自己想要什么，长期目标是什么。清楚了这个，就可以为此而构建自己生活的方方面面。</p>
+<p>心中笃定，不疾不徐。</p>
+<p>不感到绝望，破釜沉舟，重头再来。</p>
+<h3 id="游戏往事"><a href="#游戏往事" class="headerlink" title="游戏往事"></a>游戏往事</h3><p>《鸣潮》发布之初，作为一款类《原神》的游戏，产品质量口碑并不理想。但随着不断地运营和新版本发布，进步肉眼可见，评分逐渐提升，在游戏圈里甚至成为了话题。所以，我也来看看《鸣潮》是如何逆转口碑的，这个过程或许比游戏本身更值得研究。</p>
+<p><img src="https://image.meditations.top/pic/20260701155652875.webp" alt="20260623202559_png_"></p>
+<p><img src="https://image.meditations.top/pic/20260701155652897.webp" alt="20260615220736_png_"></p>
+<p><img src="https://image.meditations.top/pic/20260701155652905.webp" alt="20260620130212_png_"></p>
+<p><img src="https://image.meditations.top/pic/20260701155652915.webp" alt="20260613170740_png_"></p>
+<p><img src="https://image.meditations.top/pic/20260701155652881.webp" alt="20260605154927_png_"></p>
+<h3 id="美食烹饪"><a href="#美食烹饪" class="headerlink" title="美食烹饪"></a>美食烹饪</h3><p><img src="https://image.meditations.top/pic/20260701154242123.webp" alt="一些菜"></p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>标签：</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%97%A5%E5%B8%B8%E5%9B%9E%E9%A1%BE/"># 日常回顾</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">后退</a>
+                <span>· </span>
+                <a href="/">首页</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2026/06/03/article/%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF%202026%20%E5%B9%B4%205%20%E6%9C%88/">日积月累 2026 年 5 月</a>
+            
+        </section>
+
+
+    </article>
+
+    
+    <div class="flex items-center justify-center py-12 lg:py-16">
+        <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
+          <!-- 
+<script src="https://cdn.staticfile.net/twikoo/1.6.27/twikoo.all.min.js"></script>
+ -->
+
+<script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
+
+
+  <div  id="tcomment"></div>
+
+  <script>
+  twikoo.init({
+    envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
+    el: '#tcomment', 
+  })
+  </script>
+        </div>      
+    </div>    
+
+</div>
+
+            </div>
+            <footer id="footer" class="footer footer-center">
+    <div class="copyright">
+        <span>
+            <a href="/atom.xml" target="_blank">
+                <svg class="inline" style="width: 0.8em;height: 0.8em;vertical-align: baseline;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3310"><path d="M832.512 63.488q26.624 0 49.664 10.24t40.448 27.648 27.648 40.448 10.24 49.664l0 704.512q0 26.624-10.24 49.664t-27.648 40.448-40.448 27.648-49.664 10.24l-704.512 0q-26.624 0-49.664-10.24t-40.448-27.648-27.648-40.448-10.24-49.664l0-704.512q0-26.624 10.24-49.664t27.648-40.448 40.448-27.648 49.664-10.24l704.512 0zM188.416 923.648q19.456 0 36.864-7.168t30.208-19.968 19.968-30.208 7.168-36.864-7.168-36.864-19.968-30.208-30.208-19.968-36.864-7.168q-20.48 0-37.376 7.168t-30.208 19.968-20.48 30.208-7.168 36.864 7.168 36.864 20.48 30.208 30.208 19.968 37.376 7.168zM446.464 897.024l36.864 0q15.36 0 30.208 0.512t31.232 0.512 36.864-1.024q0-93.184-35.84-175.616t-97.28-143.872-143.872-96.768-175.616-35.328q-1.024 24.576-1.024 39.936l0 28.672q0 14.336 0.512 29.184t0.512 37.376q65.536 0 123.392 24.576t100.864 67.584 68.096 100.864 25.088 123.392zM707.584 894.976q36.864 0 49.152 0.512t18.432 1.536 15.872 1.024 41.472-2.048q0-145.408-55.296-272.896t-150.528-222.72-223.232-150.528-273.408-55.296q-1.024 25.6-1.024 36.864l0 16.384q0 4.096 0.512 5.632t0.512 7.168 0.512 18.432 0.512 40.448q119.808 0 224.768 45.056t183.296 123.392 123.392 183.296 45.056 223.744z" p-id="3311"></path></svg>
+            RSS</a> © 陆思沉 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a>
+        </span>
+    </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
