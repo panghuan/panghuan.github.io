@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="陆思沉">
+
+
+
+
+
+<title>日积月累 2026 年 10 月 | Meditations</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="https://jsd.cdn.zzko.cn/npm/theme-change@2.0.2/index.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "kjnowbcx0y");
+</script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Meditations" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+  <div class="drawer max-w-screen-2xl w-10/12 mx-auto">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full navbar">
+        <div class="flex-none md:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </label>
+        </div>
+        <div class="flex-1 px-2 mx-2">
+          <a href="/" class="font-bold">Meditations</a>
+        </div>
+        <div class="flex-none hidden md:block">
+          <ul class="menu menu-horizontal">
+            
+            <li><a class="" href="/">首页</a></li>
+            
+            <li><a class="" href="/article">文集</a></li>
+            
+            <li><a class="" href="/gamephoto">影集</a></li>
+            
+            <li><a class="" href="/cookbook">菜品</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <label class="cursor-pointer grid place-items-center">
+            <input type="checkbox" value="synthwave" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" />
+            <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-side">
+      <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class="menu p-4 w-40 min-h-full bg-base-200 items-center">
+        <!-- Sidebar content here -->
+        
+        <li><a class="" href="/">首页</a></li>
+        
+        <li><a class="" href="/article">文集</a></li>
+        
+        <li><a class="" href="/gamephoto">影集</a></li>
+        
+        <li><a class="" href="/cookbook">菜品</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</header>
+
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">展开内容</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">去到底部</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? '展开内容' : '折叠内容';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap prose leading-8">
+        <header class="post-header">
+            <h1 class="post-title">日积月累 2026 年 10 月</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        日期： 2026-11-06&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    分类：
+                            
+                                <a href="/categories/%E6%96%87%E9%9B%86/">文集</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>这里是对每月各事项进度所做的一个回顾，记录在阅读、生活等方面的思考和收获。这是写给自己的，在未来的某一天回顾，这些时光如同雁过留痕，能看到些许印记。</p>
+</blockquote>
+<p>十月份的大部分时间都在闷头读一本书。</p>
+<p>老实说，这个月并不好过。</p>
+<p>资本市场发生的一切，已经让人没有了更多的武器库来应对，只能顺其自然。</p>
+<p>无能为力的感觉，让我想起了上一份工作。那会公司的业务没有起色，但是自己也没有什么办法能够予以介入来缓解局面。</p>
+<p>耐心等待是人类一个难能可贵的品质。</p>
+<p>学会接受事情的变化超出预案，也是人面对的事情变得成熟的一种方式。</p>
+<p>身体的状况时好时坏，心理的状态时起时伏。</p>
+<p>尽量不要让精神上的变动，影响到身体的健康，是努力要保守的底线。毕竟身体是革命的本钱，如果某种方式不可持续，那么势必就要做出改变。</p>
+<p>我认为，人在某种时候，要更多回到线下，回到平凡而普通的生活。</p>
+<p><img src="https://image.meditations.top/pic/20261106170731399.webp" alt="2026-10"></p>
+<h3 id="书籍阅读"><a href="#书籍阅读" class="headerlink" title="书籍阅读"></a>书籍阅读</h3><p><img src="https://image.meditations.top/pic/20261106170750734.webp" alt="邓小平时代"></p>
+<p>我一直留着书单里的这本重磅大作，等到一个合适的时点来阅读。</p>
+<p>读的繁体版。刚开始的时候，还会一边对照简体版，看看有什么不一样，后来就慢慢释然了。执着于这种差异，会让自己失去对更重要的东西的回味与思索。</p>
+<p>之所以等到这个时候，是基于很务实的需求。手头上有一些公司，在不同的视角下，会有很大差异的估值。这不是投资方法能解决的，而是答案在投资之外，比如历史文化、经济制度、发展方向等等。</p>
+<p>一直以来，我们都生活在一种叙事视角之下，很多与生俱来的东西似乎成了思想钢印。我想看看，在其他的视角下，或者通过局外人来观看，一个国家的发展道路和兴衰起伏。</p>
+<p>一般来说，关于近现代的历史，在主流叙事之外，有很多被掩盖和光谱之外的景象。就像那些出过国的人，通过眼睛耳朵去亲身体验，才能更理解不同文明下的差异。没有办法亲身经历，只能通过更多的视角去判断。</p>
+<p>历史没有完全的真相，拿到的都是第二手信息。</p>
+<p>回到这本书，作为读者自然没有办法去判断过去的真相，但有助于去思考当下的处境，让人摆脱管中窥豹的可能。</p>
+<p>如果在未来，能够提前思考出方向盘将会向左还是向右打，那么对于投资来说，亦将是一件幸事。</p>
+<blockquote>
+<p>据在江西最后两年的大多数时间跟父母住在一起的邓榕说：「他没有意气用事，没有情绪消沉，没有放弃哪怕是最后的一线希望。」</p>
+<p>——《邓小平时代》</p>
+</blockquote>
+<p>要知道，这个时候邓小平已经六十岁左右了，跟其他一同受到迫害的元勋们比起来，其意志着实超越常人。</p>
+<blockquote>
+<p>邓小平发现，这一段退出日常政治的在野岁月使他能够对国家的重大和长远目标形成清晰的认识。倘若邓小平没有对中国需要进行的改革的性质以及如何加以落实作过长期思考，很难想像他在1977年以后能够采取那些熟练而有力的措施。毛泽东曾经利用他在延安那段被封锁隔绝的时间思考中共夺取政权后全国的整体战略，邓小平也利用了他在江西的时光，思考着他所要进行的改革的大方向。</p>
+<p>——《邓小平时代》</p>
+</blockquote>
+<p>福兮祸之所伏，祸兮福之所倚。很多时候，人生沉寂的时刻，也是拨云见日的前奏。</p>
+<blockquote>
+<p>他表达了党内高层的一种主流观点：中国的两次大灾难——大跃进和文革，是由于制度造成的，这种制度允许一人统治，容不下不同的声音。因此中国需要创建法制，这样的话一个人不管能力有多大，都不能由他一个人说了算。法制一开始可能不健全、不完善，但可以逐步使其变得公正合理。</p>
+<p>……</p>
+<p>邓小平向他的同事表示，退休年龄没有硬性规定是制度上的一个重大缺陷，不但在毛泽东晚年是这样，而且是帝制时代的通病。</p>
+<p>——《邓小平时代》</p>
+</blockquote>
+<p>邓小平花了十年时间建立起领导人退休制度。再看当下的处境，只能一声叹息。</p>
+<blockquote>
+<p>在邓小平看来，中国社会如此庞大，人口众多，百姓十分贫穷且相互对立严重，在行为方式上明显缺乏共识，所以必须有一定的自上而下的权威。自由的边界能够放得多宽，又不至于使中国社会陷入1949年以前或文革式的混乱？在整个邓小平时代，这一直是造成分歧的一个内核问题。</p>
+<p>——《邓小平时代》</p>
+</blockquote>
+<p>这个问题绵延至今。自由和混乱的界限到底在什么地方？有形的大手需要多大程度的控制？这决定了很多企业的发展方向和开放程度。</p>
+<blockquote>
+<p>作为学者，我们和其他关心人类生命和自由的人一样，都很想找出这场悲剧的明确原因，然而事实是我们谁也无法断定，假如采取另一种做法会发生什么。毕竟，这一事件才过去20年，对邓小平的决策所造成的长期影响盖棺定论是不可能的。假如中国人民在未来岁月里获得了更多的自由，这条通向自由的路是否要比前苏联的道路少一些曲折？1989年春天的事件是不是一个重要因素？我们必须承认，我们不知道答案。</p>
+<p>——《邓小平时代》</p>
+</blockquote>
+<p>这一段文字我非常欣赏作者的态度，站在观察者而不是批评家的视角，很多时候必须承认，我们不知道答案。</p>
+<blockquote>
+<p>邓小平还指示他的接班人如何应付西方仍在继续的制裁和可能的指责。他说：「概括起来就是三句话：第一句话，冷静观察；第二句话，稳住阵脚；第三句话，沉着应付。不要急，也急不得。要冷静、冷静、再冷静，埋头实干，做好一件事，我们自己的事。」   </p>
+<p>——《邓小平时代》</p>
+</blockquote>
+<p>对于个人来说，遇到困难也是如此。冷静、耐心。</p>
+<h3 id="思考笔记"><a href="#思考笔记" class="headerlink" title="思考笔记"></a>思考笔记</h3><blockquote>
+<p>我很喜欢刘邦，史书对他有一句评价是：“无可无不可”。这个评价很贴切。刘邦四十多了还和村里的狗儿在玩耍，后面几年就平定天下了。有人说他低谷期太长了吧，在我看来，刘邦根本不存在低谷期。他如果后面没成功，一辈子在村里和狗玩，他活得照样非常潇洒。他最后死的时候也很洒脱，很多人前期低谷了几十年，好不容易成功了，没享受几年就要死了，肯定不甘心。他没有，坦然地面对死亡。因为在他的人生中，他一直活在自己喜欢的状态里，做猫活的很好，做老虎还是活的很好，无可无不可。</p>
+<p>那怎样确定自己是猫还是老虎呢？会不会因为甘愿当猫，不思进取，而错过了本来可以成长为老虎的潜力呢？我觉得对我来说不会。</p>
+<p>我真不清楚我的能力到底是什么水平，是普通还是优秀。但我知道自己现在能做什么，知道自己擅长做什么，也知道自己喜欢做什么。我一直在做这些，未来能到什么水平？一直是猫的水平，还是会成长到猞猁，豹子，老虎的水平？我不清楚，也不在乎。很多人并不爱自己，他爱的是幻想中牛逼的自己。他也不爱孩子，他爱的是理想中各方面都优秀的孩子。</p>
+<p>——公众号 梁孝永康</p>
+</blockquote>
+<p>人要如何才能爱自己？首先得要接纳自己的样子。</p>
+<p>少一些执念，多一些坦然。</p>
+<p>顺其自然，知足常乐。</p>
+<hr>
+<blockquote>
+<p>在他们看来，最理想的组织，是让聪明的人尽可能自由地探索，不必把时间消耗在繁琐的流程和汇报上。“给他卡就够了”，是他们对理想研究环境最朴素、也最浪漫的描述。</p>
+<p>但如何争取这些卡、决定把卡给谁，以及为最后的结果负责，却是一场极其现实、艰苦的工作。</p>
+<p>认知、格局、技术、管理。在真实的商业战场上，这四种能力其实根本无法剥离。认知是判断做什么、不做什么，这既需要扎实的技术体感，也需要看清终局的格局；而要把判断变成现实的结果，离不开管理与组织协作。</p>
+<p>——晚点</p>
+</blockquote>
+<p>真实世界逃脱不了人的有限性。即便是最顶级的人才，依然要面对取舍抉择，以及为结果负责。</p>
+<hr>
+<p>聊一下 FPS 游戏。</p>
+<p>通常来说，一个成功跑出来的游戏，是一个成功的产品。游戏之间是具有差异化的。</p>
+<p>但随着产能的提升，特别是在AI的加持下，高规格的产能将使长青游戏从产品向平台过渡。</p>
+<p>玩法、技术等领先的特性，这个是可复制的。</p>
+<p>强大的产能下，积累的玩家数据和游戏生态，却不是能够很容易迁移到。</p>
+<p>随着游戏开发方式的变革，玩家越来越多的参与到反馈中，具备更大体量的游戏能够获得更多的玩家需求，从而改善玩法和运营。也就是说，游戏某种程度上从 PGC 向 UGC 过渡。</p>
+<p>当然，这一切的基础，是产能要足够承接玩家的需求。</p>
+<p>因此游戏制作逐渐呈现马太效应。</p>
+<h3 id="浮光掠影"><a href="#浮光掠影" class="headerlink" title="浮光掠影"></a>浮光掠影</h3><p><img src="https://image.meditations.top/pic/20261107160144961.webp" alt="城市一角"></p>
+<p><img src="https://image.meditations.top/pic/20261107160220836.webp" alt="城市的生命力"></p>
+<h3 id="美食烹饪"><a href="#美食烹饪" class="headerlink" title="美食烹饪"></a>美食烹饪</h3><p><img src="https://image.meditations.top/pic/20261107160256112.webp" alt="一些菜"></p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>标签：</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%97%A5%E5%B8%B8%E5%9B%9E%E9%A1%BE/"># 日常回顾</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">后退</a>
+                <span>· </span>
+                <a href="/">首页</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2026/10/14/article/%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF%202026%20%E5%B9%B4%209%20%E6%9C%88/">日积月累 2026 年 9 月</a>
+            
+        </section>
+
+
+    </article>
+
+    
+    <div class="flex items-center justify-center py-12 lg:py-16">
+        <div class="w-11/12 lg:w-10/12 max-w-screen-lg">
+          <!-- 
+<script src="https://cdn.staticfile.net/twikoo/1.6.27/twikoo.all.min.js"></script>
+ -->
+
+<script src="https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js"></script>
+
+
+  <div  id="tcomment"></div>
+
+  <script>
+  twikoo.init({
+    envId: 'https://panghuan-twikoo.netlify.app/.netlify/functions/twikoo', 
+    el: '#tcomment', 
+  })
+  </script>
+        </div>      
+    </div>    
+
+</div>
+
+            </div>
+            <footer id="footer" class="footer footer-center">
+    <div class="copyright">
+        <span>
+            <a href="/atom.xml" target="_blank">
+                <svg class="inline" style="width: 0.8em;height: 0.8em;vertical-align: baseline;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3310"><path d="M832.512 63.488q26.624 0 49.664 10.24t40.448 27.648 27.648 40.448 10.24 49.664l0 704.512q0 26.624-10.24 49.664t-27.648 40.448-40.448 27.648-49.664 10.24l-704.512 0q-26.624 0-49.664-10.24t-40.448-27.648-27.648-40.448-10.24-49.664l0-704.512q0-26.624 10.24-49.664t27.648-40.448 40.448-27.648 49.664-10.24l704.512 0zM188.416 923.648q19.456 0 36.864-7.168t30.208-19.968 19.968-30.208 7.168-36.864-7.168-36.864-19.968-30.208-30.208-19.968-36.864-7.168q-20.48 0-37.376 7.168t-30.208 19.968-20.48 30.208-7.168 36.864 7.168 36.864 20.48 30.208 30.208 19.968 37.376 7.168zM446.464 897.024l36.864 0q15.36 0 30.208 0.512t31.232 0.512 36.864-1.024q0-93.184-35.84-175.616t-97.28-143.872-143.872-96.768-175.616-35.328q-1.024 24.576-1.024 39.936l0 28.672q0 14.336 0.512 29.184t0.512 37.376q65.536 0 123.392 24.576t100.864 67.584 68.096 100.864 25.088 123.392zM707.584 894.976q36.864 0 49.152 0.512t18.432 1.536 15.872 1.024 41.472-2.048q0-145.408-55.296-272.896t-150.528-222.72-223.232-150.528-273.408-55.296q-1.024 25.6-1.024 36.864l0 16.384q0 4.096 0.512 5.632t0.512 7.168 0.512 18.432 0.512 40.448q119.808 0 224.768 45.056t183.296 123.392 123.392 183.296 45.056 223.744z" p-id="3311"></path></svg>
+            RSS</a> © 陆思沉 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a>
+        </span>
+    </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
